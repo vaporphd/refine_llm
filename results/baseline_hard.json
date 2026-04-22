@@ -1,0 +1,361 @@
+{
+  "model": "gpt-4o-mini",
+  "metrics": {
+    "total": 40,
+    "correct": 34,
+    "accuracy": 0.85,
+    "format_strict_ok": 40,
+    "format_strict_ratio": 1.0,
+    "per_class": {
+      "search": {
+        "correct": 7,
+        "total": 10,
+        "accuracy": 0.7
+      },
+      "understand": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0
+      },
+      "describe": {
+        "correct": 7,
+        "total": 10,
+        "accuracy": 0.7
+      },
+      "modify": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0
+      }
+    },
+    "predicted_classes_present": [
+      "describe",
+      "modify",
+      "search",
+      "understand"
+    ],
+    "predicted_classes_count": 4
+  },
+  "results": [
+    {
+      "user": "напиши нормальный makefile в корне чтобы можно было собирать и запускать make build make xcode etc",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "check whats next",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "найди где мы считаем retry count",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "where does the packet tunnel config live?",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "расскажи из чего состоит scrumban проект",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "почему после merge падает сборка? вот лог",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "почему у нас два разных клиента для openai?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "удали dead code в utils.py",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "посмотри текущее состояние проекта и что дальше по плану",
+      "expected": "describe",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "find the reason and the issue with smoke-tester",
+      "expected": "search",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "walk me through processEvent line by line",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "опиши взаимодействие frontend backend и worker",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "не трогай parser, только fix logger",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "give me the big picture on how scrumban connects to telegram bot",
+      "expected": "describe",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "где parser initializes?",
+      "expected": "search",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "поставь главной модель minimax/minimax-m2.5:free",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "check current state and tell what next",
+      "expected": "describe",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "describe cron scheduler и его взаимодействие с job runner",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "посмотри где объявлен enum PacketKind",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "добавь правило и запомни регулярно вести followup.md файл",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "how does the session loop actually break?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "I have an issue while bilding app in xcode",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "locate SessionStart hook handler please",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "where in the code do we compute token savings?",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "найди все упоминания fallback_model в репо",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "fix the off-by-one in this loop",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "проверь токены в hermes настройках",
+      "expected": "search",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "что делает функция validateConfig?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "объясни по шагам что делает run_loop.py",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "почему логи не сбрасываются после рестарта?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "refactor функцию validateConfig",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "опиши структуру openclaw и ключевые компоненты",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "почему disasm падает на этом байте 0xFF 0xC0?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "опиши текущий флоу обработки задачи от analyst до dev",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "fix that shit",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "опиши, как работает наш scrumban в общих чертах",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "дай overall architecture, как модули Core/App/CLI связаны",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "fix the issue",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "что за херня с config.yaml?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{"text": "locate the retry config", "label": "search", "lang": "en"}
+{"text": "в каком модуле hmac signing?", "label": "search", "lang": "mixed"}
+{"text": "где лежат миграции?", "label": "search", "lang": "ru"}
+{"text": "which file handles the SIGTERM?", "label": "search", "lang": "en"}
+{"text": "find all callers of buildContext", "label": "search", "lang": "en"}
+{"text": "посмотри где объявлен enum PacketKind", "label": "search", "lang": "mixed"}
+{"text": "в каком классе лежит cache invalidation?", "label": "search", "lang": "mixed"}
+{"text": "show me database schema file", "label": "search", "lang": "en"}
+{"text": "покажи .env.example, хочу посмотреть что там", "label": "search", "lang": "ru"}
+{"text": "grep for deprecated flag", "label": "search", "lang": "en"}
+{"text": "где config loader?", "label": "search", "lang": "ru"}
+{"text": "find where we log rate limits", "label": "search", "lang": "en"}
+{"text": "покажи все tests для ProjectMerger", "label": "search", "lang": "mixed"}
+{"text": "where is this constant defined: MAX_CONCURRENT_JOBS", "label": "search", "lang": "en"}
+{"text": "посмотри в какой ветке лежит fix для 112", "label": "search", "lang": "ru"}
+{"text": "list files larger than 1MB in Core", "label": "search", "lang": "en"}
+{"text": "не меняй ничего, просто покажи где код который выбрасывает эту ошибку", "label": "search", "lang": "ru"}
+{"text": "don't fix anything, just show me where we initialize the client", "label": "search", "lang": "en"}
+{"text": "где хуки в .claude/settings.json описаны?", "label": "search", "lang": "ru"}
+{"text": "найди место где идёт serialization в JSON", "label": "search", "lang": "ru"}
+{"text": "в каком файле у нас middleware chain?", "label": "search", "lang": "ru"}
+{"text": "где мы раньше это уже делали? поищи похожее", "label": "search", "lang": "ru"}
+{"text": "в доках есть раздел про rate limits? где именно?", "label": "search", "lang": "ru"}
+{"text": "which PR introduced the OAuth flow?", "label": "search", "lang": "en"}
+{"text": "find in logs: failed to validate token", "label": "search", "lang": "en"}
+{"text": "why does rehydrate() return Optional here?", "label": "understand", "lang": "en"}
+{"text": "разбери почему ProjectMerger падает при пустом stash", "label": "understand", "lang": "mixed"}
+{"text": "зачем здесь Semaphore если есть GCD queue?", "label": "understand", "lang": "mixed"}
+{"text": "что делает этот regex? /\\b[A-Z]{2,}\\b/g", "label": "understand", "lang": "mixed"}
+{"text": "объясни почему тест flaky, вот trace...", "label": "understand", "lang": "ru"}
+{"text": "почему у нас два разных клиента для openai?", "label": "understand", "lang": "ru"}
+{"text": "объясни разницу между этими двумя функциями", "label": "understand", "lang": "ru"}
+{"text": "how does the scheduler pick the next job?", "label": "understand", "lang": "en"}
+{"text": "the error says 'address already in use' — why?", "label": "understand", "lang": "en"}
+{"text": "почему disasm падает на этом байте 0xFF 0xC0?", "label": "understand", "lang": "ru"}
+{"text": "что здесь не так?", "label": "understand", "lang": "ru"}
+{"text": "какого чёрта здесь лямбда?", "label": "understand", "lang": "ru"}
+{"text": "why the fuck is this sync?", "label": "understand", "lang": "en"}
+{"text": "а разве тут не race condition?", "label": "understand", "lang": "ru"}
+{"text": "can you tell why retry doesn't fire?", "label": "understand", "lang": "en"}
+{"text": "что не так с авторизацией? я токен передаю", "label": "understand", "lang": "ru"}
+{"text": "почему после merge падает сборка? вот лог", "label": "understand", "lang": "ru"}
+{"text": "what's the deal with double-locking here?", "label": "understand", "lang": "en"}
+{"text": "дай overall architecture, как модули Core/App/CLI связаны", "label": "describe", "lang": "mixed"}
+{"text": "outline the whole AI pipeline please", "label": "describe", "lang": "en"}
+{"text": "what's the current test strategy across the project?", "label": "describe", "lang": "en"}
+{"text": "опиши, как работает наш scrumban в общих чертах", "label": "describe", "lang": "ru"}
+{"text": "give me a summary of what each agent does in agent-office", "label": "describe", "lang": "en"}
+{"text": "какие есть основные сервисы и как они общаются?", "label": "describe", "lang": "ru"}
+{"text": "нарисуй словами как у нас устроен деплой", "label": "describe", "lang": "ru"}
+{"text": "what does this microservice do at a high level?", "label": "describe", "lang": "en"}
+{"text": "дай обзор v2ray подключения flow", "label": "describe", "lang": "mixed"}
+{"text": "опиши зоны ответственности между Core и App", "label": "describe", "lang": "ru"}
+{"text": "как в целом устроен сценарий от issue до merge?", "label": "describe", "lang": "ru"}
+{"text": "summary of the whole repo please", "label": "describe", "lang": "en"}
+{"text": "расскажи структуру и dependency graph", "label": "describe", "lang": "mixed"}
+{"text": "high-level view of the auth stack", "label": "describe", "lang": "en"}
+{"text": "опиши кратко основные классы и за что отвечают", "label": "describe", "lang": "ru"}
+{"text": "что вообще у нас за проект, summary в пару абзацев", "label": "describe", "lang": "mixed"}
+{"text": "walk me through the build process top to bottom", "label": "describe", "lang": "en"}
+{"text": "у нас три папки tasks/docs/scripts — что там в общем?", "label": "describe", "lang": "ru"}
+{"text": "describe how data flows from user input to db", "label": "describe", "lang": "en"}
+{"text": "опиши взаимодействие frontend backend и worker", "label": "describe", "lang": "ru"}
+{"text": "explain overall pipeline without going into specific functions", "label": "describe", "lang": "en"}
+{"text": "rough overview of the indexer please", "label": "describe", "lang": "en"}
+{"text": "поделись обзором что у нас тут вообще", "label": "describe", "lang": "ru"}
+{"text": "bird's eye view of the mcp server", "label": "describe", "lang": "en"}
+{"text": "перепиши handler чтобы использовать async/await", "label": "modify", "lang": "ru"}
+{"text": "add pagination to this endpoint", "label": "modify", "lang": "en"}
+{"text": "bump openai sdk to latest", "label": "modify", "lang": "en"}
+{"text": "удали dead code в utils.py", "label": "modify", "lang": "mixed"}
+{"text": "fix the off-by-one in this loop", "label": "modify", "lang": "en"}
+{"text": "добавь graceful shutdown на SIGINT", "label": "modify", "lang": "mixed"}
+{"text": "split this 400-line function into smaller ones", "label": "modify", "lang": "en"}
+{"text": "напиши интеграционный тест для login flow", "label": "modify", "lang": "ru"}
+{"text": "сделай миграцию на postgres 16", "label": "modify", "lang": "ru"}
+{"text": "add caching for GET /users endpoint", "label": "modify", "lang": "en"}
+{"text": "fix the memory leak in the image cache", "label": "modify", "lang": "en"}
+{"text": "вынеси магические константы в отдельный файл", "label": "modify", "lang": "ru"}

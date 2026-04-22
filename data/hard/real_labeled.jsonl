@@ -1,0 +1,121 @@
+{"text": "где parser initializes?", "label": "search", "lang": "mixed"}
+{"text": "где код девайса?", "label": "search", "lang": "ru"}
+{"text": "это где-то сохраняется и загружается позже или откуда эта дрянь?", "label": "search", "lang": "ru"}
+{"text": "покажи, где правило на ведение insights and adr", "label": "search", "lang": "mixed"}
+{"text": "посмотри последние issues над которыми работали", "label": "search", "lang": "ru"}
+{"text": "check which task do we have to continue", "label": "search", "lang": "en"}
+{"text": "find the reason and the issue with smoke-tester", "label": "search", "lang": "en"}
+{"text": "check current credentials openai-codex-oauth-4", "label": "search", "lang": "en"}
+{"text": "check hermes agent settings. why I see \"rate limit reached\"", "label": "search", "lang": "en"}
+{"text": "посмотри на какой модели работает телеграм бот", "label": "search", "lang": "ru"}
+{"text": "проверь токены в hermes настройках", "label": "search", "lang": "mixed"}
+{"text": "check the followup.md tell me what's next", "label": "search", "lang": "en"}
+{"text": "check current project state and next tasks", "label": "search", "lang": "en"}
+{"text": "check next tasks", "label": "search", "lang": "en"}
+{"text": "check whats next", "label": "search", "lang": "en"}
+{"text": "какая следующая задача подойдет для тестов лучше всего?", "label": "search", "lang": "ru"}
+{"text": "посмотри последние задачи по liza hub", "label": "search", "lang": "mixed"}
+{"text": "where does the packet tunnel config live?", "label": "search", "lang": "en"}
+{"text": "where in the code do we compute token savings?", "label": "search", "lang": "en"}
+{"text": "найди где мы считаем retry count", "label": "search", "lang": "ru"}
+{"text": "в каком файле определён класс AgentRunner?", "label": "search", "lang": "ru"}
+{"text": "show me the file where openrouter client sends requests", "label": "search", "lang": "en"}
+{"text": "locate SessionStart hook handler please", "label": "search", "lang": "en"}
+{"text": "найди все упоминания fallback_model в репо", "label": "search", "lang": "ru"}
+{"text": "grep for TODO:SECURITY across the repo", "label": "search", "lang": "en"}
+{"text": "объясни почему ревьювер сказал - плохо, но задача не ушла обратно к dev?", "label": "understand", "lang": "ru"}
+{"text": "проверь незакоммиченные изменения и объясни почему они не закоммичены", "label": "understand", "lang": "ru"}
+{"text": "tell me why js and not python?", "label": "understand", "lang": "en"}
+{"text": "tell me what was the reasont", "label": "understand", "lang": "en"}
+{"text": "с чего ты взял что фикс не помог? я тестирую мастер", "label": "understand", "lang": "ru"}
+{"text": "почему логи не сбрасываются после рестарта?", "label": "understand", "lang": "ru"}
+{"text": "почему make команды не генерируют проект", "label": "understand", "lang": "ru"}
+{"text": "почему у меня быстро переполняется контекст в openclaw, после первого сообщения буквально", "label": "understand", "lang": "ru"}
+{"text": "why not 3? most current solutions lives in docker", "label": "understand", "lang": "en"}
+{"text": "why followup not updated?", "label": "understand", "lang": "en"}
+{"text": "why issues not filed?", "label": "understand", "lang": "en"}
+{"text": "почему ты не коммитишь lessons.md?", "label": "understand", "lang": "ru"}
+{"text": "это что за хуйня: Update(/Users/alv/.hermes/config.yaml) Added 1 line, removed 1 line", "label": "understand", "lang": "mixed"}
+{"text": "что делает функция validateConfig?", "label": "understand", "lang": "mixed"}
+{"text": "explain эту регулярку", "label": "understand", "lang": "mixed"}
+{"text": "точно ли работает?", "label": "understand", "lang": "ru"}
+{"text": "this function again?", "label": "understand", "lang": "en"}
+{"text": "how does the session loop actually break?", "label": "understand", "lang": "en"}
+{"text": "what can break the loop?", "label": "understand", "lang": "en"}
+{"text": "у меня есть другой впн на тех же настройках отдает ipv4 в терминале, почему у нас не так?", "label": "understand", "lang": "ru"}
+{"text": "как работает fallback_model в конфиге?", "label": "understand", "lang": "mixed"}
+{"text": "why settings UI is still so broken?", "label": "understand", "lang": "en"}
+{"text": "I have an issue while bilding app in xcode", "label": "understand", "lang": "en"}
+{"text": "когда подключаюсь ошибка: missing plugin type", "label": "understand", "lang": "ru"}
+{"text": "что за херня с config.yaml?", "label": "understand", "lang": "ru"}
+{"text": "че за хуйня с этим хуком?", "label": "understand", "lang": "ru"}
+{"text": "а что если кэш протух, как обработаем?", "label": "understand", "lang": "ru"}
+{"text": "объясни по шагам что делает run_loop.py", "label": "understand", "lang": "ru"}
+{"text": "walk me through processEvent line by line", "label": "understand", "lang": "en"}
+{"text": "objasni эту ошибку: invalid_subject_token missing organization_id", "label": "understand", "lang": "mixed"}
+{"text": "что делает этот hook? и надо ли его вообще?", "label": "understand", "lang": "ru"}
+{"text": "почему у нас в retry нет exponential backoff?", "label": "understand", "lang": "ru"}
+{"text": "make a document from this, save to docs/", "label": "describe", "lang": "en"}
+{"text": "напиши еще кратко прям по коду алгоритм с пояснениями в ту же папку", "label": "describe", "lang": "ru"}
+{"text": "check current project and give me examples which real world tasks I can solve using it", "label": "describe", "lang": "en"}
+{"text": "check current project and tell me what we have", "label": "describe", "lang": "en"}
+{"text": "посмотри текущее состояние проекта и что дальше по плану", "label": "describe", "lang": "ru"}
+{"text": "посмотри текущий проект и скажи, как правильно протестировать пайплайн?", "label": "describe", "lang": "ru"}
+{"text": "дай детали по 86, что это такое и зачем", "label": "describe", "lang": "ru"}
+{"text": "check the current project you are on", "label": "describe", "lang": "en"}
+{"text": "give me a high-level overview of the agent-office architecture", "label": "describe", "lang": "en"}
+{"text": "опиши текущий флоу обработки задачи от analyst до dev", "label": "describe", "lang": "ru"}
+{"text": "what modules does hermes have? walk me through", "label": "describe", "lang": "en"}
+{"text": "расскажи из чего состоит scrumban проект", "label": "describe", "lang": "ru"}
+{"text": "посмотри доки, какая следующая phase?", "label": "describe", "lang": "mixed"}
+{"text": "теперь пройдись по всем файлам документации и спецификаций, проверь актуальность", "label": "describe", "lang": "ru"}
+{"text": "overview of the v2ray mac packet tunnel design", "label": "describe", "lang": "en"}
+{"text": "I want a walkthrough of the whole smoke-tester agent", "label": "describe", "lang": "en"}
+{"text": "опиши структуру openclaw и ключевые компоненты", "label": "describe", "lang": "ru"}
+{"text": "какие у нас есть агенты и что каждый делает?", "label": "describe", "lang": "ru"}
+{"text": "tell me what we have to do", "label": "describe", "lang": "en"}
+{"text": "check current state and tell what next", "label": "describe", "lang": "en"}
+{"text": "напиши план проекта для приложения, которое является kanban доской с telegram ботом", "label": "describe", "lang": "mixed"}
+{"text": "Подумай и напиши документ - я хочу приложение для мак, которое является v2ray приложением", "label": "describe", "lang": "mixed"}
+{"text": "summarize what changed in the last 10 commits", "label": "describe", "lang": "en"}
+{"text": "describe cron scheduler и его взаимодействие с job runner", "label": "describe", "lang": "mixed"}
+{"text": "summary плиз всего модуля auth", "label": "describe", "lang": "mixed"}
+{"text": "give me the big picture on how scrumban connects to telegram bot", "label": "describe", "lang": "en"}
+{"text": "refactor функцию validateConfig", "label": "modify", "lang": "mixed"}
+{"text": "fix that shit", "label": "modify", "lang": "en"}
+{"text": "fix issues", "label": "modify", "lang": "en"}
+{"text": "fix the issue", "label": "modify", "lang": "en"}
+{"text": "merge it", "label": "modify", "lang": "en"}
+{"text": "remove semgrep completely, I tried it but no luck", "label": "modify", "lang": "en"}
+{"text": "Remove duplicate superpowers", "label": "modify", "lang": "en"}
+{"text": "keep openai-codex-oauth-4 and openai-codex-oauth-3 only, remove others, update fallback in settings", "label": "modify", "lang": "en"}
+{"text": "add openrouter minimax model as a fallback", "label": "modify", "lang": "en"}
+{"text": "поставь главной модель minimax/minimax-m2.5:free", "label": "modify", "lang": "mixed"}
+{"text": "замени gemini на openrouter nemotron", "label": "modify", "lang": "mixed"}
+{"text": "поменяй app group", "label": "modify", "lang": "mixed"}
+{"text": "когда ask for ai function naming looks like skip some functions which are already named, check it debug and fix", "label": "modify", "lang": "mixed"}
+{"text": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций", "label": "modify", "lang": "ru"}
+{"text": "write insights, adr, update followup.md, commit it, push and merge", "label": "modify", "lang": "en"}
+{"text": "напиши нормальный makefile в корне чтобы можно было собирать и запускать make build make xcode etc", "label": "modify", "lang": "mixed"}
+{"text": "commit and push to main", "label": "modify", "lang": "en"}
+{"text": "сделай нормальный промпт для каждой функции, для ai naming, для декомпиляции и тп", "label": "modify", "lang": "ru"}
+{"text": "делай через snapshots для ui openai протестируй на реальных данных", "label": "modify", "lang": "mixed"}
+{"text": "не трогай parser, только fix logger", "label": "modify", "lang": "mixed"}
+{"text": "не меняй схему БД, перепиши только validator", "label": "modify", "lang": "ru"}
+{"text": "только рефакторинг имен переменных, логику не трогай", "label": "modify", "lang": "ru"}
+{"text": "запроси токен через device code и сохрани его в keychain", "label": "modify", "lang": "mixed"}
+{"text": "add a test for the edge case when config is empty", "label": "modify", "lang": "en"}
+{"text": "напиши unit test на parseRoutes", "label": "modify", "lang": "mixed"}
+{"text": "store tokens locally but permanent for fixes, add it to .gitignore so it won't leak", "label": "modify", "lang": "en"}
+{"text": "I want you to add next feature - for llm it should support openai using device code like codex does", "label": "modify", "lang": "en"}
+{"text": "фикси в первую очередь, потом продолжай тестирование e2e и проверку логов", "label": "modify", "lang": "ru"}
+{"text": "запиши 2 issue на странице monitor должны быть цифры total in out не моментальная скорость", "label": "modify", "lang": "mixed"}
+{"text": "добавь правило и запомни регулярно вести followup.md файл", "label": "modify", "lang": "ru"}
+{"text": "переделай на claude-cli opus fallback 1 openai-codex gpt-5.4 fallback 2 openrouter nemotron", "label": "modify", "lang": "mixed"}
+{"text": "сохрани текущее состояние как работающее - сделай tag в github обнови документацию и спеку", "label": "modify", "lang": "ru"}
+{"text": "поправь retry — exponential backoff, max 5 попыток", "label": "modify", "lang": "ru"}
+{"text": "rewrite validateRoutes in pure functional style", "label": "modify", "lang": "en"}
+{"text": "rename everywhere: followup -> feedback, держи один файл", "label": "modify", "lang": "mixed"}
+{"text": "extract this block в отдельную функцию, назови её buildContext", "label": "modify", "lang": "mixed"}
+{"text": "сделай txt файл с описанием архитектуры, положи в docs/", "label": "modify", "lang": "ru"}
+{"text": "check credentials at ~/.openclaw and copy it to hermes", "label": "modify", "lang": "en"}

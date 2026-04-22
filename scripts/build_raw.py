@@ -12,10 +12,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 SYSTEM_PROMPT = (
-    "Ты — классификатор запросов разработчика к AI-ассистенту по кодовой базе. "
-    "Определи тип запроса и ответь ровно одним словом из списка: "
+    "You are a classifier for developer requests to an AI coding assistant. "
+    "The request can be in Russian, English, or mixed. "
+    "Classify the developer's intent and reply with exactly one word from: "
     "search, understand, describe, modify. "
-    "Никаких пояснений, префиксов или знаков препинания."
+    "No explanations, prefixes, quotes, or punctuation."
 )
 
 ALLOWED = {"search", "understand", "describe", "modify"}
