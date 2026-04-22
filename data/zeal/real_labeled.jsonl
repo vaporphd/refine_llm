@@ -1,0 +1,14 @@
+{"text": "где код девайса?", "label": "search", "origin": "real"}
+{"text": "покажи, где правило на ведение insights and adr", "label": "search", "origin": "real"}
+{"text": "это где-то сохраняется и загружается позже или откуда эта дрянь?", "label": "search", "origin": "real"}
+{"text": "проверь текущие adr и insights, я не вижу ничего нового, проверь почему они не пишутся и напиши причину", "label": "understand", "origin": "real"}
+{"text": "сейчас посмотри текущее состояние проекта и что дальше по плану", "label": "describe", "origin": "real"}
+{"text": "проверь на чем мы остановились, перечитай правила", "label": "describe", "origin": "real"}
+{"text": "что еще нужно сделать по графу функций?", "label": "describe", "origin": "real"}
+{"text": "что еще осталось по графу? есть какие-то пробелы?", "label": "describe", "origin": "real"}
+{"text": "посмотри историю проекта и 2 последних исправления - ui окна settings и запрос в openai через регистрацию устройства, как ты будешь тестировать эти 2 задачи?", "label": "modify", "origin": "real"}
+{"text": "делай через snapshots для ui, openai протестируй на реальных данных", "label": "modify", "origin": "real"}
+{"text": "проверь что проект собирается", "label": "modify", "origin": "real"}
+{"text": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций", "label": "modify", "origin": "real"}
+{"text": "добавь re-analyze, работай через issue", "label": "modify", "origin": "real"}
+{"text": "сделай нормальный промпт для каждой функции, для ai naming, для декомпиляции и тп", "label": "modify", "origin": "real"}

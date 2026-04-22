@@ -1,0 +1,121 @@
+{
+  "model": "gpt-4o-mini",
+  "metrics": {
+    "total": 10,
+    "correct": 8,
+    "accuracy": 0.8,
+    "format_strict_ok": 10,
+    "format_strict_ratio": 1.0,
+    "per_class": {
+      "search": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "understand": {
+        "correct": 2,
+        "total": 3,
+        "accuracy": 0.6666666666666666
+      },
+      "describe": {
+        "correct": 1,
+        "total": 2,
+        "accuracy": 0.5
+      },
+      "modify": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      }
+    },
+    "predicted_classes_present": [
+      "describe",
+      "modify",
+      "search",
+      "understand"
+    ],
+    "predicted_classes_count": 4
+  },
+  "results": [
+    {
+      "user": "покажи, где правило на ведение insights and adr",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "проверь текущие adr и insights, я не вижу ничего нового, проверь почему они не пишутся и напиши причину",
+      "expected": "understand",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "расскажи как устроен Core модуль, какие подсистемы",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "почему в ZealProject.swift merge идёт через отдельный ProjectMerger а не внутри проекта?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "сделай нормальный промпт для каждой функции, для ai naming, для декомпиляции и тп",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "что означает флаг is_stub в zeal_analysis.c?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "найди место где читаются nlist_64 записи",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "перепиши парсинг symtab в macho_parser.c чтобы не копировать строки",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "как данные текут от Mach-O парсера до отрисовки в UI?",
+      "expected": "describe",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "покажи где определён ZealBinary",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    }
+  ]
+}

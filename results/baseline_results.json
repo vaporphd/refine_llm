@@ -1,0 +1,121 @@
+{
+  "model": "gpt-4o-mini",
+  "metrics": {
+    "total": 10,
+    "correct": 9,
+    "accuracy": 0.9,
+    "format_strict_ok": 10,
+    "format_strict_ratio": 1.0,
+    "per_class": {
+      "search": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "understand": {
+        "correct": 3,
+        "total": 3,
+        "accuracy": 1.0
+      },
+      "describe": {
+        "correct": 1,
+        "total": 2,
+        "accuracy": 0.5
+      },
+      "modify": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      }
+    },
+    "predicted_classes_present": [
+      "describe",
+      "modify",
+      "search",
+      "understand"
+    ],
+    "predicted_classes_count": 4
+  },
+  "results": [
+    {
+      "user": "покажи, где правило на ведение insights and adr",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "почему make команды не генерируют проект",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "какие модули есть и как они между собой связаны?",
+      "expected": "describe",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": false
+    },
+    {
+      "user": "объясни почему ревьювер сказал - плохо, но задача не ушла обратно к dev?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "вынеси магические числа в константы",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "почему этот тест падает на CI, но проходит локально?",
+      "expected": "understand",
+      "raw_reply": "understand",
+      "normalized": "understand",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "какие есть миграции в этом проекте?",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "напиши миграцию чтобы добавить поле deleted_at в таблицу users",
+      "expected": "modify",
+      "raw_reply": "modify",
+      "normalized": "modify",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "дай обзор слоя авторизации: какие файлы, как связаны, где точка входа",
+      "expected": "describe",
+      "raw_reply": "describe",
+      "normalized": "describe",
+      "format_ok": true,
+      "correct": true
+    },
+    {
+      "user": "в каком файле роутер настраивается?",
+      "expected": "search",
+      "raw_reply": "search",
+      "normalized": "search",
+      "format_ok": true,
+      "correct": true
+    }
+  ]
+}

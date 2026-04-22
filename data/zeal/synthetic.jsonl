@@ -1,0 +1,36 @@
+{"text": "где парсится LC_SEGMENT_64 в macho_parser.c?", "label": "search", "origin": "synth"}
+{"text": "найди все вызовы AINamingService", "label": "search", "origin": "synth"}
+{"text": "в каком файле построение CFG?", "label": "search", "origin": "synth"}
+{"text": "покажи где определён ZealBinary", "label": "search", "origin": "synth"}
+{"text": "где регистрируется MCP-сервер?", "label": "search", "origin": "synth"}
+{"text": "найди место где читаются nlist_64 записи", "label": "search", "origin": "synth"}
+{"text": "в каком модуле лежит OpenAIDeviceAuth?", "label": "search", "origin": "synth"}
+{"text": "где хранятся пользовательские комментарии, в UserCommentStore?", "label": "search", "origin": "synth"}
+{"text": "найди где выводится список xrefs в Inspector", "label": "search", "origin": "synth"}
+{"text": "покажи файл с логикой ProjectMerger", "label": "search", "origin": "synth"}
+{"text": "что делает функция walk_chain в zeal_chain_walk.c?", "label": "understand", "origin": "synth"}
+{"text": "объясни как AIContextBuilder собирает контекст для LLM", "label": "understand", "origin": "synth"}
+{"text": "почему в ZealProject.swift merge идёт через отдельный ProjectMerger а не внутри проекта?", "label": "understand", "origin": "synth"}
+{"text": "как работает compressed ULEB128 в LC_FUNCTION_STARTS?", "label": "understand", "origin": "synth"}
+{"text": "зачем AINameStore отдельно от AINamingService?", "label": "understand", "origin": "synth"}
+{"text": "почему disasm.c отдельно от cfg.c? что между ними разделено?", "label": "understand", "origin": "synth"}
+{"text": "что означает флаг is_stub в zeal_analysis.c?", "label": "understand", "origin": "synth"}
+{"text": "разбери почему в macho_unwind.c используется state machine", "label": "understand", "origin": "synth"}
+{"text": "объясни связь между AppDelegate и NavigationController", "label": "understand", "origin": "synth"}
+{"text": "почему MCP-сервер на C а не на Swift?", "label": "understand", "origin": "synth"}
+{"text": "что такое BasicBlock в CFG и почему он inline'ится?", "label": "understand", "origin": "synth"}
+{"text": "почему используется GCD а не Swift Concurrency?", "label": "understand", "origin": "synth"}
+{"text": "опиши архитектуру Zeal в целом", "label": "describe", "origin": "synth"}
+{"text": "расскажи как устроен Core модуль, какие подсистемы", "label": "describe", "origin": "synth"}
+{"text": "дай обзор AI-слоя: какие файлы и как связаны", "label": "describe", "origin": "synth"}
+{"text": "как данные текут от Mach-O парсера до отрисовки в UI?", "label": "describe", "origin": "synth"}
+{"text": "какие есть основные Swift-модули в App/Sources и за что каждый отвечает", "label": "describe", "origin": "synth"}
+{"text": "опиши роль mcp/ подпроекта относительно основного App", "label": "describe", "origin": "synth"}
+{"text": "чем отличается CLI от App и зачем обе точки входа", "label": "describe", "origin": "synth"}
+{"text": "дай высокоуровневый обзор как ведётся проект в ZealProject", "label": "describe", "origin": "synth"}
+{"text": "добавь в CFG поддержку indirect jump через jump table", "label": "modify", "origin": "synth"}
+{"text": "перепиши парсинг symtab в macho_parser.c чтобы не копировать строки", "label": "modify", "origin": "synth"}
+{"text": "напиши unit-тест для ProjectMerger с конфликтующими именами функций", "label": "modify", "origin": "synth"}
+{"text": "добавь в AIPanelViewController кнопку 'Re-analyze selection'", "label": "modify", "origin": "synth"}
+{"text": "поправь баг: при закрытии окна Navigation не сохраняется история", "label": "modify", "origin": "synth"}
+{"text": "оптимизируй поиск в FindSymbolWindowController, сейчас тормозит на больших бинарях", "label": "modify", "origin": "synth"}

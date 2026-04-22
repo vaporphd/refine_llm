@@ -1,0 +1,15 @@
+{"text": "где код девайса?", "label": "search", "origin": "real"}
+{"text": "покажи, где правило на ведение insights and adr", "label": "search", "origin": "real"}
+{"text": "у нас macos таргет какой?", "label": "search", "origin": "real"}
+{"text": "проверь, что все ветки слиты в main", "label": "search", "origin": "real"}
+{"text": "почему make команды не генерируют проект", "label": "understand", "origin": "real"}
+{"text": "почему логи не сбрасываются после рестарта?", "label": "understand", "origin": "real"}
+{"text": "зачем нам backward compatible?", "label": "understand", "origin": "real"}
+{"text": "объясни почему ревьювер сказал - плохо, но задача не ушла обратно к dev?", "label": "understand", "origin": "real"}
+{"text": "дай детали по 86, что это такое и зачем", "label": "understand", "origin": "real"}
+{"text": "сейчас посмотри текущее состояние проекта и что дальше по плану", "label": "describe", "origin": "real"}
+{"text": "посмотри текущий проект и скажи, как правильно протестировать пайплайн? я хочу увидеть каждый шаг отдельно, проконтролировать что на входе и что на выходе от каждого агента", "label": "describe", "origin": "real"}
+{"text": "перечитай файл tasks/journal-page.md, все ли укладывается в текущий концепт?", "label": "describe", "origin": "real"}
+{"text": "напиши нормальный makefile в корне, чтобы можно было собирать и запускать командами: make build, make xcode", "label": "modify", "origin": "real"}
+{"text": "добавь в statusline время сброса лимитов", "label": "modify", "origin": "real"}
+{"text": "для страницы календаря затени события, которые уже в прошлом, они должны быть не такими яркими как предстоящие", "label": "modify", "origin": "real"}

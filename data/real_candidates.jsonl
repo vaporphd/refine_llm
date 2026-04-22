@@ -1,0 +1,39 @@
+{"text": "посмотри логи - почему у меня быстро переполняется контекст в openclaw. после первого сообщения буквально", "source": "openclaw", "agent_class": "understand", "conf": "high"}
+{"text": "посмотри текущее состояние проекта. сейчас есть проблема, что при коннекте вылетает ошибка. проверь логи", "source": "v2ray-mac", "agent_class": "describe", "conf": "medium"}
+{"text": "напиши нормальный makefile в корне, чтобы можно было собирать и запускать командами: make build, make xcode etc", "source": "v2ray-mac", "agent_class": "modify", "conf": "high"}
+{"text": "почему make команды не генерируют проект", "source": "v2ray-mac", "agent_class": "understand", "conf": "high"}
+{"text": "исправь проблему - SwiftFormat так и не установился из-за сети. не закрывай задачи, если что-то не работает", "source": "v2ray-mac", "agent_class": "modify", "conf": "high"}
+{"text": "можешь посмотреть, что менял в AppDelegate? окно оттуда открывается", "source": "v2ray-mac", "agent_class": "search", "conf": "medium"}
+{"text": "у нас macos таргет какой?", "source": "v2ray-mac", "agent_class": "search", "conf": "high"}
+{"text": "где код девайса?", "source": "zeal", "agent_class": "search", "conf": "high"}
+{"text": "покажи, где правило на ведение insights and adr", "source": "zeal", "agent_class": "search", "conf": "high"}
+{"text": "проверь текущие adr и insights. я не вижу ничего нового, проверь, почему они не пишутся и напиши причину", "source": "zeal", "agent_class": "understand", "conf": "medium"}
+{"text": "проверь, что все ветки слиты в main", "source": "v2ray-mac", "agent_class": "search", "conf": "medium"}
+{"text": "это где-то сохраняется и загружается позже или откуда эта дрянь?", "source": "zeal", "agent_class": "search", "conf": "medium"}
+{"text": "посмотри историю проекта и 2 последних исправления - ui окна settings и запрос в openai через регистрацию устройства. скажи как ты будешь тестировать эти 2 задачи? мне нужны надежные тесты", "source": "zeal", "agent_class": "modify", "conf": "high"}
+{"text": "делай через snapshots для ui. openai протестируй на реальных данных. откуда я знаю, что ты нормальный unit-test написал", "source": "zeal", "agent_class": "modify", "conf": "high"}
+{"text": "проверь что проект собирается", "source": "zeal", "agent_class": "modify", "conf": "medium"}
+{"text": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций", "source": "zeal", "agent_class": "modify", "conf": "high"}
+{"text": "добавь re-analyze. работай через issue", "source": "zeal", "agent_class": "modify", "conf": "high"}
+{"text": "сделай нормальный промпт для каждой функции. для ai naming, для декомпиляции и тп", "source": "zeal", "agent_class": "modify", "conf": "high"}
+{"text": "перечитай файл tasks/journal-page.md. там были изменения. все ли укладывается в текущий концепт?", "source": "agent-office", "agent_class": "understand", "conf": "medium"}
+{"text": "проверь незакоммиченные изменения и объясни почему они не закоммичены", "source": "agent-office", "agent_class": "understand", "conf": "high"}
+{"text": "зачем нам backward compatible?", "source": "agent-office", "agent_class": "understand", "conf": "high"}
+{"text": "объясни почему ревьювер сказал - плохо, но задача не ушла обратно к dev?", "source": "agent-office", "agent_class": "understand", "conf": "high"}
+{"text": "почему нужен timeout? ты можешь читать output и делать timeout не на всю задачу?", "source": "agent-office", "agent_class": "understand", "conf": "high"}
+{"text": "почему логи не сбрасываются после рестарта?", "source": "v2ray-mac", "agent_class": "understand", "conf": "high"}
+{"text": "при всем этом - не проще было переписать библиотеку на swift/rust/c++?", "source": "v2ray-mac", "agent_class": "understand", "conf": "medium"}
+{"text": "дай детали по 86, что это такое и зачем", "source": "v2ray-mac", "agent_class": "describe", "conf": "medium"}
+{"text": "посмотри текущий проект и скажи, как правильно протестировать пайплайн? я хочу увидеть каждый шаг отдельно. проконтролировать что на входе и что на выходе от каждого агента. как это сделать? чего не хватает на странице проекта/канбан/пайплайн для этого?", "source": "agent-office", "agent_class": "describe", "conf": "high"}
+{"text": "сейчас посмотри текущее состояние проекта и что дальше по плану", "source": "zeal", "agent_class": "describe", "conf": "high"}
+{"text": "какой статус и что по планам брать следующим?", "source": "v2ray-mac", "agent_class": "describe", "conf": "medium"}
+{"text": "проверь на чем мы остановились. перечитай правила", "source": "zeal", "agent_class": "describe", "conf": "medium"}
+{"text": "что еще нужно сделать по графу функций?", "source": "zeal", "agent_class": "describe", "conf": "medium"}
+{"text": "что еще осталось по графу? есть какие-то пробелы?", "source": "zeal", "agent_class": "describe", "conf": "medium"}
+{"text": "добавь в statusline время сброса лимитов", "source": "agent-office", "agent_class": "modify", "conf": "high"}
+{"text": "добавь в статуслайн текущие лимиты на 5 часов и на неделю", "source": "agent-office", "agent_class": "modify", "conf": "high"}
+{"text": "на странице usage давай сделаем так - если я переключаюсь на today - графики должны показывать расход по часам", "source": "agent-office", "agent_class": "modify", "conf": "high"}
+{"text": "для страницы календаря затени события, которые уже в прошлом. они должны быть не такими яркими как предстоящие", "source": "agent-office", "agent_class": "modify", "conf": "high"}
+{"text": "а давай рендерить markdown красиво в journal", "source": "agent-office", "agent_class": "modify", "conf": "high"}
+{"text": "еще баг - окно настроек не открывается. создай задачу и фикси в приоритете", "source": "v2ray-mac", "agent_class": "modify", "conf": "high"}
+{"text": "опять краш при попытке connect", "source": "v2ray-mac", "agent_class": "modify", "conf": "medium"}
