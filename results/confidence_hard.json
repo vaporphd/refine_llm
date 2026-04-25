@@ -1,0 +1,1723 @@
+{
+  "model": "gpt-4o-mini",
+  "config": {
+    "temperature_redundancy": 0.7,
+    "threshold_ok": 0.85,
+    "threshold_fail": 0.5
+  },
+  "summary": {
+    "total": 50,
+    "statuses": {
+      "OK": 28,
+      "UNSURE": 22
+    },
+    "api_calls": 150,
+    "tokens": 15967,
+    "wall_clock_sec": 656.91,
+    "latency_p50_ms": 885,
+    "latency_p95_ms": 2885,
+    "estimated_cost_usd": 0.006
+  },
+  "results": [
+    {
+      "idx": 1,
+      "user": "напиши нормальный makefile в корне чтобы можно было собирать и запускать make build make xcode etc",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 2885.0277075544,
+      "latency_ms_each": [
+        2393.5655001550913,
+        2468.8072912395,
+        2885.0277075544
+      ],
+      "tokens_total": 363
+    },
+    {
+      "idx": 2,
+      "user": "check whats next",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "search",
+      "confidence": 0.5,
+      "votes": [
+        "search",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.50 < 0.85",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.5,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.5}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1057.1222081780434,
+      "latency_ms_each": [
+        596.6571671888232,
+        784.7845833748579,
+        1057.1222081780434
+      ],
+      "tokens_total": 300
+    },
+    {
+      "idx": 3,
+      "user": "найди где мы считаем retry count",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "search",
+      "confidence": 0.9,
+      "votes": [
+        "search",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1032.4123743921518,
+      "latency_ms_each": [
+        593.6813745647669,
+        1032.4123743921518,
+        785.6383752077818
+      ],
+      "tokens_total": 315
+    },
+    {
+      "idx": 4,
+      "user": "where does the packet tunnel config live?",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "search",
+      "confidence": 0.9,
+      "votes": [
+        "search",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 772.8912495076656,
+      "latency_ms_each": [
+        564.301916398108,
+        772.8912495076656,
+        676.3338325545192
+      ],
+      "tokens_total": 312
+    },
+    {
+      "idx": 5,
+      "user": "расскажи из чего состоит scrumban проект",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "describe",
+      "confidence": 0.9,
+      "votes": [
+        "describe",
+        "describe",
+        "describe"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "describe",
+        "plain2": "describe",
+        "json": {
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 680.6016247719526,
+      "latency_ms_each": [
+        587.656332179904,
+        620.2879585325718,
+        680.6016247719526
+      ],
+      "tokens_total": 321
+    },
+    {
+      "idx": 6,
+      "user": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1087.8259157761931,
+      "latency_ms_each": [
+        909.3537926673889,
+        561.5889998152852,
+        1087.8259157761931
+      ],
+      "tokens_total": 345
+    },
+    {
+      "idx": 7,
+      "user": "почему после merge падает сборка? вот лог",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.8,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.80 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 702.9069997370243,
+      "latency_ms_each": [
+        511.47512532770634,
+        609.6923751756549,
+        702.9069997370243
+      ],
+      "tokens_total": 327
+    },
+    {
+      "idx": 8,
+      "user": "почему у нас два разных клиента для openai?",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.8,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.80 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 794.0419996157289,
+      "latency_ms_each": [
+        794.0419996157289,
+        598.7191665917635,
+        731.2795827165246
+      ],
+      "tokens_total": 324
+    },
+    {
+      "idx": 9,
+      "user": "удали dead code в utils.py",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1100.9297082200646,
+      "latency_ms_each": [
+        489.40495774149895,
+        774.4343327358365,
+        1100.9297082200646
+      ],
+      "tokens_total": 309
+    },
+    {
+      "idx": 10,
+      "user": "посмотри текущее состояние проекта и что дальше по плану",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.7,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.70 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 728.3777911216021,
+      "latency_ms_each": [
+        589.116333052516,
+        623.0053324252367,
+        728.3777911216021
+      ],
+      "tokens_total": 336
+    },
+    {
+      "idx": 11,
+      "user": "find the reason and the issue with smoke-tester",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.8,
+      "votes": [
+        "understand",
+        "understand",
+        "search"
+      ],
+      "vote_top_count": 2,
+      "format_ok": true,
+      "reason": "2/3 agree (split vote)",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "search",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"search\",\"confidence\":0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1116.0800410434604,
+      "latency_ms_each": [
+        1011.2456660717726,
+        733.8592922315001,
+        1116.0800410434604
+      ],
+      "tokens_total": 320
+    },
+    {
+      "idx": 12,
+      "user": "walk me through processEvent line by line",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "understand",
+      "confidence": 0.9,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 730.0199586898088,
+      "latency_ms_each": [
+        551.0712917894125,
+        543.8080411404371,
+        730.0199586898088
+      ],
+      "tokens_total": 318
+    },
+    {
+      "idx": 13,
+      "user": "опиши взаимодействие frontend backend и worker",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "describe",
+      "confidence": 0.9,
+      "votes": [
+        "describe",
+        "describe",
+        "describe"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "describe",
+        "plain2": "describe",
+        "json": {
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1083.4434581920505,
+      "latency_ms_each": [
+        1083.4434581920505,
+        729.5084577053785,
+        760.5246249586344
+      ],
+      "tokens_total": 315
+    },
+    {
+      "idx": 14,
+      "user": "не трогай parser, только fix logger",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 759.7122499719262,
+      "latency_ms_each": [
+        619.3209169432521,
+        588.1328340619802,
+        759.7122499719262
+      ],
+      "tokens_total": 315
+    },
+    {
+      "idx": 15,
+      "user": "give me the big picture on how scrumban connects to telegram bot",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.8,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.80 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 863.1165828555822,
+      "latency_ms_each": [
+        638.6907501146197,
+        645.7316661253572,
+        863.1165828555822
+      ],
+      "tokens_total": 336
+    },
+    {
+      "idx": 16,
+      "user": "где parser initializes?",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.8,
+      "votes": [
+        "understand",
+        "understand",
+        "search"
+      ],
+      "vote_top_count": 2,
+      "format_ok": true,
+      "reason": "2/3 agree (split vote)",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "search",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"search\",\"confidence\":0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 860.187042504549,
+      "latency_ms_each": [
+        860.187042504549,
+        678.2021252438426,
+        788.281999528408
+      ],
+      "tokens_total": 305
+    },
+    {
+      "idx": 17,
+      "user": "поставь главной модель minimax/minimax-m2.5:free",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 717.5829596817493,
+      "latency_ms_each": [
+        543.8071256503463,
+        502.37037520855665,
+        717.5829596817493
+      ],
+      "tokens_total": 336
+    },
+    {
+      "idx": 18,
+      "user": "check current state and tell what next",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.7,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.70 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 704.6979162842035,
+      "latency_ms_each": [
+        606.1016246676445,
+        560.232499614358,
+        704.6979162842035
+      ],
+      "tokens_total": 312
+    },
+    {
+      "idx": 19,
+      "user": "describe cron scheduler и его взаимодействие с job runner",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "describe",
+      "confidence": 0.9,
+      "votes": [
+        "describe",
+        "describe",
+        "describe"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "describe",
+        "plain2": "describe",
+        "json": {
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 710.0852075964212,
+      "latency_ms_each": [
+        581.1982098966837,
+        593.7744993716478,
+        710.0852075964212
+      ],
+      "tokens_total": 321
+    },
+    {
+      "idx": 20,
+      "user": "посмотри где объявлен enum PacketKind",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "search",
+      "confidence": 0.9,
+      "votes": [
+        "search",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1133.5392091423273,
+      "latency_ms_each": [
+        472.36237581819296,
+        666.7433744296432,
+        1133.5392091423273
+      ],
+      "tokens_total": 315
+    },
+    {
+      "idx": 21,
+      "user": "добавь правило и запомни регулярно вести followup.md файл",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 777.5707077234983,
+      "latency_ms_each": [
+        556.9243328645825,
+        563.9496669173241,
+        777.5707077234983
+      ],
+      "tokens_total": 333
+    },
+    {
+      "idx": 22,
+      "user": "how does the session loop actually break?",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "understand",
+      "confidence": 0.9,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 702.3239154368639,
+      "latency_ms_each": [
+        631.2190424650908,
+        536.8581674993038,
+        702.3239154368639
+      ],
+      "tokens_total": 315
+    },
+    {
+      "idx": 23,
+      "user": "I have an issue while bilding app in xcode",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.7,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.70 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 847.3994163796306,
+      "latency_ms_each": [
+        580.0012508407235,
+        532.228666357696,
+        847.3994163796306
+      ],
+      "tokens_total": 327
+    },
+    {
+      "idx": 24,
+      "user": "locate SessionStart hook handler please",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "search",
+      "confidence": 0.9,
+      "votes": [
+        "search",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 663.8112086802721,
+      "latency_ms_each": [
+        650.6680836901069,
+        476.3480834662914,
+        663.8112086802721
+      ],
+      "tokens_total": 309
+    },
+    {
+      "idx": 25,
+      "user": "where in the code do we compute token savings?",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "search",
+      "confidence": 0.9,
+      "votes": [
+        "search",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1185.0232910364866,
+      "latency_ms_each": [
+        513.3566241711378,
+        526.998084038496,
+        1185.0232910364866
+      ],
+      "tokens_total": 318
+    },
+    {
+      "idx": 26,
+      "user": "найди все упоминания fallback_model в репо",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "search",
+      "confidence": 0.9,
+      "votes": [
+        "search",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1249.2685420438647,
+      "latency_ms_each": [
+        706.1812905594707,
+        563.9423746615648,
+        1249.2685420438647
+      ],
+      "tokens_total": 324
+    },
+    {
+      "idx": 27,
+      "user": "fix the off-by-one in this loop",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1134.8739173263311,
+      "latency_ms_each": [
+        622.7794578298926,
+        954.6392494812608,
+        1134.8739173263311
+      ],
+      "tokens_total": 315
+    },
+    {
+      "idx": 28,
+      "user": "проверь токены в hermes настройках",
+      "expected": "search",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "modify",
+      "confidence": 0.8,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.80 < 0.85",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 604303.2520413399,
+      "latency_ms_each": [
+        604303.2520413399,
+        674.4020823389292,
+        735.2779172360897
+      ],
+      "tokens_total": 321
+    },
+    {
+      "idx": 29,
+      "user": "что делает функция validateConfig?",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "understand",
+      "confidence": 0.9,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1270.1037088409066,
+      "latency_ms_each": [
+        1063.761125318706,
+        771.993082948029,
+        1270.1037088409066
+      ],
+      "tokens_total": 309
+    },
+    {
+      "idx": 30,
+      "user": "объясни по шагам что делает run_loop.py",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "understand",
+      "confidence": 0.9,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1074.8605830594897,
+      "latency_ms_each": [
+        1007.148209027946,
+        1049.3359165266156,
+        1074.8605830594897
+      ],
+      "tokens_total": 327
+    },
+    {
+      "idx": 31,
+      "user": "почему логи не сбрасываются после рестарта?",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "understand",
+      "confidence": 0.9,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 2051.7393331974745,
+      "latency_ms_each": [
+        684.3344578519464,
+        700.901709496975,
+        2051.7393331974745
+      ],
+      "tokens_total": 327
+    },
+    {
+      "idx": 32,
+      "user": "refactor функцию validateConfig",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1117.8050423040986,
+      "latency_ms_each": [
+        967.7947498857975,
+        639.1439577564597,
+        1117.8050423040986
+      ],
+      "tokens_total": 303
+    },
+    {
+      "idx": 33,
+      "user": "опиши структуру openclaw и ключевые компоненты",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "describe",
+      "confidence": 0.9,
+      "votes": [
+        "describe",
+        "describe",
+        "describe"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "describe",
+        "plain2": "describe",
+        "json": {
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 3666.5807496756315,
+      "latency_ms_each": [
+        3666.5807496756315,
+        1091.4904586970806,
+        883.3958329632878
+      ],
+      "tokens_total": 327
+    },
+    {
+      "idx": 34,
+      "user": "почему disasm падает на этом байте 0xFF 0xC0?",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.8,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.80 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1230.6730831041932,
+      "latency_ms_each": [
+        518.5468327254057,
+        525.9370002895594,
+        1230.6730831041932
+      ],
+      "tokens_total": 351
+    },
+    {
+      "idx": 35,
+      "user": "опиши текущий флоу обработки задачи от analyst до dev",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "describe",
+      "confidence": 0.9,
+      "votes": [
+        "describe",
+        "describe",
+        "describe"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "describe",
+        "plain2": "describe",
+        "json": {
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1158.9437499642372,
+      "latency_ms_each": [
+        834.7604582086205,
+        584.6318751573563,
+        1158.9437499642372
+      ],
+      "tokens_total": 330
+    },
+    {
+      "idx": 36,
+      "user": "fix that shit",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "modify",
+      "confidence": 0.7,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.70 < 0.85",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 786.319250240922,
+      "latency_ms_each": [
+        571.969292126596,
+        572.7472091093659,
+        786.319250240922
+      ],
+      "tokens_total": 297
+    },
+    {
+      "idx": 37,
+      "user": "опиши, как работает наш scrumban в общих чертах",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "describe",
+      "confidence": 0.9,
+      "votes": [
+        "describe",
+        "describe",
+        "describe"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "describe",
+        "plain2": "describe",
+        "json": {
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 787.4049581587315,
+      "latency_ms_each": [
+        609.137125313282,
+        596.9300828874111,
+        787.4049581587315
+      ],
+      "tokens_total": 333
+    },
+    {
+      "idx": 38,
+      "user": "дай overall architecture, как модули Core/App/CLI связаны",
+      "expected": "describe",
+      "kind": "holdout",
+      "status": "OK",
+      "predicted": "describe",
+      "confidence": 0.9,
+      "votes": [
+        "describe",
+        "describe",
+        "describe"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "describe",
+        "plain2": "describe",
+        "json": {
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 737.1389595791698,
+      "latency_ms_each": [
+        574.0961246192455,
+        603.3339165151119,
+        737.1389595791698
+      ],
+      "tokens_total": 333
+    },
+    {
+      "idx": 39,
+      "user": "fix the issue",
+      "expected": "modify",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "modify",
+      "confidence": 0.7,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.70 < 0.85",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1766.90583396703,
+      "latency_ms_each": [
+        632.3523754253983,
+        719.9755413457751,
+        1766.90583396703
+      ],
+      "tokens_total": 297
+    },
+    {
+      "idx": 40,
+      "user": "что за херня с config.yaml?",
+      "expected": "understand",
+      "kind": "holdout",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.7,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.70 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1238.383624702692,
+      "latency_ms_each": [
+        655.5725829675794,
+        502.62258294969797,
+        1238.383624702692
+      ],
+      "tokens_total": 318
+    },
+    {
+      "idx": 41,
+      "user": "?",
+      "expected": "FAIL",
+      "kind": "adv-single-char",
+      "status": "UNSURE",
+      "predicted": "search",
+      "confidence": 0.4,
+      "votes": [
+        "understand",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 2,
+      "format_ok": true,
+      "reason": "2/3 agree (split vote)",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.4,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.4}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1199.139665812254,
+      "latency_ms_each": [
+        552.8447078540921,
+        616.9533338397741,
+        1199.139665812254
+      ],
+      "tokens_total": 295
+    },
+    {
+      "idx": 42,
+      "user": "fix",
+      "expected": "modify",
+      "kind": "adv-single-word",
+      "status": "UNSURE",
+      "predicted": "modify",
+      "confidence": 0.7,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.70 < 0.85",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 885.4942508041859,
+      "latency_ms_each": [
+        601.5720833092928,
+        558.9754590764642,
+        885.4942508041859
+      ],
+      "tokens_total": 291
+    },
+    {
+      "idx": 43,
+      "user": "что",
+      "expected": "FAIL",
+      "kind": "adv-single-word",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.5,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.50 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.5,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.5}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 815.7986244186759,
+      "latency_ms_each": [
+        533.4139578044415,
+        546.7651672661304,
+        815.7986244186759
+      ],
+      "tokens_total": 294
+    },
+    {
+      "idx": 44,
+      "user": "найди и удали все упоминания GitHub Copilot из кода",
+      "expected": "modify",
+      "kind": "adv-double-intent",
+      "status": "OK",
+      "predicted": "modify",
+      "confidence": 0.9,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1194.34270914644,
+      "latency_ms_each": [
+        613.5195409879088,
+        722.1367917954922,
+        1194.34270914644
+      ],
+      "tokens_total": 336
+    },
+    {
+      "idx": 45,
+      "user": "explain why this fails and then fix it permanently",
+      "expected": "modify",
+      "kind": "adv-double-intent",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.8,
+      "votes": [
+        "understand",
+        "understand",
+        "modify"
+      ],
+      "vote_top_count": 2,
+      "format_ok": true,
+      "reason": "2/3 agree (split vote)",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "modify",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 740.1566663756967,
+      "latency_ms_each": [
+        637.3346671462059,
+        646.1254991590977,
+        740.1566663756967
+      ],
+      "tokens_total": 320
+    },
+    {
+      "idx": 46,
+      "user": "describe everything and rewrite all bad parts",
+      "expected": "modify",
+      "kind": "adv-triple-intent",
+      "status": "UNSURE",
+      "predicted": "modify",
+      "confidence": 0.7,
+      "votes": [
+        "modify",
+        "modify",
+        "modify"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.70 < 0.85",
+      "raw": {
+        "plain1": "modify",
+        "plain2": "modify",
+        "json": {
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 766.239458695054,
+      "latency_ms_each": [
+        530.1639176905155,
+        529.4414591044188,
+        766.239458695054
+      ],
+      "tokens_total": 309
+    },
+    {
+      "idx": 47,
+      "user": "donde esta la funcion validateUser?",
+      "expected": "search",
+      "kind": "adv-spanish",
+      "status": "OK",
+      "predicted": "search",
+      "confidence": 0.9,
+      "votes": [
+        "search",
+        "search",
+        "search"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree, confidence >= 0.85, format ok",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 740.1715833693743,
+      "latency_ms_each": [
+        628.6763343960047,
+        639.5309586077929,
+        740.1715833693743
+      ],
+      "tokens_total": 312
+    },
+    {
+      "idx": 48,
+      "user": "wie funktioniert dieser Hook?",
+      "expected": "understand",
+      "kind": "adv-german",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.8,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.80 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 875.8497089147568,
+      "latency_ms_each": [
+        576.9009161740541,
+        546.7346254736185,
+        875.8497089147568
+      ],
+      "tokens_total": 306
+    },
+    {
+      "idx": 49,
+      "user": "lol idk man this whole codebase is just yikes please halp",
+      "expected": "FAIL",
+      "kind": "adv-noisy-no-intent",
+      "status": "UNSURE",
+      "predicted": "understand",
+      "confidence": 0.5,
+      "votes": [
+        "understand",
+        "understand",
+        "understand"
+      ],
+      "vote_top_count": 3,
+      "format_ok": true,
+      "reason": "3/3 agree but confidence=0.50 < 0.85",
+      "raw": {
+        "plain1": "understand",
+        "plain2": "understand",
+        "json": {
+          "label": "understand",
+          "confidence": 0.5,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.5}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 788.0773758515716,
+      "latency_ms_each": [
+        656.381624750793,
+        606.9752080366015,
+        788.0773758515716
+      ],
+      "tokens_total": 336
+    },
+    {
+      "idx": 50,
+      "user": "найди объясни и удали",
+      "expected": "modify",
+      "kind": "adv-ambiguous-chain",
+      "status": "UNSURE",
+      "predicted": "search",
+      "confidence": 0.7,
+      "votes": [
+        "search",
+        "search",
+        "modify"
+      ],
+      "vote_top_count": 2,
+      "format_ok": true,
+      "reason": "2/3 agree (split vote)",
+      "raw": {
+        "plain1": "search",
+        "plain2": "search",
+        "json": {
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.7}",
+          "parse_error": false
+        }
+      },
+      "latency_ms_max": 1501.212333329022,
+      "latency_ms_each": [
+        665.3609583154321,
+        643.6758330091834,
+        1501.212333329022
+      ],
+      "tokens_total": 309
+    }
+  ]
+}

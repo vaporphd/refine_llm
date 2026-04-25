@@ -1,0 +1,10 @@
+{"text": "?", "label": "FAIL", "kind": "single-char", "lang": "n/a"}
+{"text": "fix", "label": "modify", "kind": "single-word", "lang": "en"}
+{"text": "что", "label": "FAIL", "kind": "single-word", "lang": "ru"}
+{"text": "найди и удали все упоминания GitHub Copilot из кода", "label": "modify", "kind": "double-intent", "lang": "ru"}
+{"text": "explain why this fails and then fix it permanently", "label": "modify", "kind": "double-intent", "lang": "en"}
+{"text": "describe everything and rewrite all bad parts", "label": "modify", "kind": "triple-intent", "lang": "en"}
+{"text": "donde esta la funcion validateUser?", "label": "search", "kind": "spanish", "lang": "es"}
+{"text": "wie funktioniert dieser Hook?", "label": "understand", "kind": "german", "lang": "de"}
+{"text": "lol idk man this whole codebase is just yikes please halp", "label": "FAIL", "kind": "noisy-no-intent", "lang": "en"}
+{"text": "найди объясни и удали", "label": "modify", "kind": "ambiguous-chain", "lang": "ru"}
