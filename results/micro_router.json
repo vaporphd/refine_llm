@@ -1,0 +1,1524 @@
+{
+  "config": {
+    "embed_model": "text-embedding-3-small",
+    "llm_model": "gpt-4o-mini",
+    "threshold": 0.6,
+    "n_train": 160,
+    "train_accuracy": 1.0
+  },
+  "summary": {
+    "total": 50,
+    "holdout_total": 40,
+    "adv_total": 10,
+    "stayed": 32,
+    "escalated": 18,
+    "correct_total": 40,
+    "holdout_correct": 36,
+    "adv_correct": 4,
+    "stayed_correct": 29,
+    "escalated_correct": 11,
+    "total_cost_usd": 0.000422,
+    "embed_cost_usd": 1.2e-05,
+    "llm_cost_usd": 0.00041,
+    "n_llm_calls": 18,
+    "wall_clock_sec": 7.34,
+    "latency_p50_ms": 1087,
+    "latency_p95_ms": 2160
+  },
+  "results": [
+    {
+      "user": "напиши нормальный makefile в корне чтобы можно было собирать и запускать make build make xcode etc",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 1143.3135829865932,
+        "tokens": 32,
+        "cost": 6.4e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.7955155493947805,
+        "proba": {
+          "describe": 0.13974033779069234,
+          "modify": 0.7955155493947805,
+          "search": 0.031688682856636265,
+          "understand": 0.033055429957890764
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.7955155493947805,
+      "llm_call": null,
+      "total_cost": 6.4e-07,
+      "total_latency_ms": 1143.3135829865932,
+      "correct": true
+    },
+    {
+      "user": "check whats next",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 1107.632708735764,
+        "tokens": 3,
+        "cost": 6.000000000000001e-08
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.6942227926680269,
+        "proba": {
+          "describe": 0.16453886309946913,
+          "modify": 0.05437425872326943,
+          "search": 0.6942227926680269,
+          "understand": 0.08686408550923454
+        }
+      },
+      "route": "stayed",
+      "final_label": "search",
+      "final_confidence": 0.6942227926680269,
+      "llm_call": null,
+      "total_cost": 6.000000000000001e-08,
+      "total_latency_ms": 1107.632708735764,
+      "correct": true
+    },
+    {
+      "user": "найди где мы считаем retry count",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 1098.198083229363,
+        "tokens": 11,
+        "cost": 2.2e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.8964231706572574,
+        "proba": {
+          "describe": 0.009217915900317961,
+          "modify": 0.05363848279365345,
+          "search": 0.8964231706572574,
+          "understand": 0.040720430648771185
+        }
+      },
+      "route": "stayed",
+      "final_label": "search",
+      "final_confidence": 0.8964231706572574,
+      "llm_call": null,
+      "total_cost": 2.2e-07,
+      "total_latency_ms": 1098.198083229363,
+      "correct": true
+    },
+    {
+      "user": "where does the packet tunnel config live?",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 1120.1912080869079,
+        "tokens": 8,
+        "cost": 1.6e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.757718841780752,
+        "proba": {
+          "describe": 0.1193008799002385,
+          "modify": 0.03620084595794968,
+          "search": 0.757718841780752,
+          "understand": 0.0867794323610599
+        }
+      },
+      "route": "stayed",
+      "final_label": "search",
+      "final_confidence": 0.757718841780752,
+      "llm_call": null,
+      "total_cost": 1.6e-07,
+      "total_latency_ms": 1120.1912080869079,
+      "correct": true
+    },
+    {
+      "user": "расскажи из чего состоит scrumban проект",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 1087.44612429291,
+        "tokens": 16,
+        "cost": 3.2e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.774846846233554,
+        "proba": {
+          "describe": 0.774846846233554,
+          "modify": 0.05615171669843105,
+          "search": 0.06260110983604328,
+          "understand": 0.10640032723197156
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.774846846233554,
+      "llm_call": null,
+      "total_cost": 3.2e-07,
+      "total_latency_ms": 1087.44612429291,
+      "correct": true
+    },
+    {
+      "user": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 1066.9660000130534,
+        "tokens": 30,
+        "cost": 6e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.94346014672838,
+        "proba": {
+          "describe": 0.02184168150374143,
+          "modify": 0.94346014672838,
+          "search": 0.007457813307426194,
+          "understand": 0.02724035846045214
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.94346014672838,
+      "llm_call": null,
+      "total_cost": 6e-07,
+      "total_latency_ms": 1066.9660000130534,
+      "correct": true
+    },
+    {
+      "user": "почему после merge падает сборка? вот лог",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 1118.3739164844155,
+        "tokens": 19,
+        "cost": 3.8e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.6290426812560267,
+        "proba": {
+          "describe": 0.0482675062394483,
+          "modify": 0.13483978166298602,
+          "search": 0.18785003084153895,
+          "understand": 0.6290426812560267
+        }
+      },
+      "route": "stayed",
+      "final_label": "understand",
+      "final_confidence": 0.6290426812560267,
+      "llm_call": null,
+      "total_cost": 3.8e-07,
+      "total_latency_ms": 1118.3739164844155,
+      "correct": true
+    },
+    {
+      "user": "почему у нас два разных клиента для openai?",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 1174.7270422056317,
+        "tokens": 17,
+        "cost": 3.4000000000000003e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.7279264763485893,
+        "proba": {
+          "describe": 0.0842883306282018,
+          "modify": 0.12827247031182648,
+          "search": 0.059512722711382464,
+          "understand": 0.7279264763485893
+        }
+      },
+      "route": "stayed",
+      "final_label": "understand",
+      "final_confidence": 0.7279264763485893,
+      "llm_call": null,
+      "total_cost": 3.4000000000000003e-07,
+      "total_latency_ms": 1174.7270422056317,
+      "correct": true
+    },
+    {
+      "user": "удали dead code в utils.py",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 355.5830828845501,
+        "tokens": 7,
+        "cost": 1.4e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.46954906037363775,
+        "proba": {
+          "describe": 0.036641016554423915,
+          "modify": 0.46954906037363775,
+          "search": 0.17689016871816166,
+          "understand": 0.3169197543537766
+        }
+      },
+      "route": "escalated",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "modify",
+        "confidence": 0.9,
+        "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+        "latency_ms": 880.7619158178568,
+        "tokens_in": 102,
+        "tokens_out": 11,
+        "cost": 2.1899999999999997e-05
+      },
+      "total_cost": 2.2039999999999996e-05,
+      "total_latency_ms": 1236.3449987024069,
+      "correct": true
+    },
+    {
+      "user": "посмотри текущее состояние проекта и что дальше по плану",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 295.83258368074894,
+        "tokens": 23,
+        "cost": 4.6e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.8074752459446198,
+        "proba": {
+          "describe": 0.8074752459446198,
+          "modify": 0.014056698158412501,
+          "search": 0.16367972758086038,
+          "understand": 0.01478832831610727
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.8074752459446198,
+      "llm_call": null,
+      "total_cost": 4.6e-07,
+      "total_latency_ms": 295.83258368074894,
+      "correct": true
+    },
+    {
+      "user": "find the reason and the issue with smoke-tester",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 356.457750312984,
+        "tokens": 10,
+        "cost": 2e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.3696524095484142,
+        "proba": {
+          "describe": 0.11415287758881802,
+          "modify": 0.17632943117705946,
+          "search": 0.3398652816857083,
+          "understand": 0.3696524095484142
+        }
+      },
+      "route": "escalated",
+      "final_label": "search",
+      "final_confidence": 0.85,
+      "llm_call": {
+        "label": "search",
+        "confidence": 0.85,
+        "raw": "{\"label\":\"search\",\"confidence\":0.85}",
+        "latency_ms": 718.3559583500028,
+        "tokens_in": 105,
+        "tokens_out": 11,
+        "cost": 2.235e-05
+      },
+      "total_cost": 2.2550000000000003e-05,
+      "total_latency_ms": 1074.8137086629868,
+      "correct": true
+    },
+    {
+      "user": "walk me through processEvent line by line",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 368.474124930799,
+        "tokens": 8,
+        "cost": 1.6e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.7058043499192175,
+        "proba": {
+          "describe": 0.7058043499192175,
+          "modify": 0.09039366495901732,
+          "search": 0.15029746098819644,
+          "understand": 0.05350452413356885
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.7058043499192175,
+      "llm_call": null,
+      "total_cost": 1.6e-07,
+      "total_latency_ms": 368.474124930799,
+      "correct": false
+    },
+    {
+      "user": "опиши взаимодействие frontend backend и worker",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 322.95375037938356,
+        "tokens": 14,
+        "cost": 2.8e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.4163092007467658,
+        "proba": {
+          "describe": 0.3568146417030748,
+          "modify": 0.4163092007467658,
+          "search": 0.08194182186869961,
+          "understand": 0.14493433568145966
+        }
+      },
+      "route": "escalated",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "describe",
+        "confidence": 0.9,
+        "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+        "latency_ms": 1069.3550426512957,
+        "tokens_in": 103,
+        "tokens_out": 14,
+        "cost": 2.3849999999999997e-05
+      },
+      "total_cost": 2.4129999999999998e-05,
+      "total_latency_ms": 1392.3087930306792,
+      "correct": true
+    },
+    {
+      "user": "не трогай parser, только fix logger",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 384.80779249221087,
+        "tokens": 9,
+        "cost": 1.8e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.7743975353514277,
+        "proba": {
+          "describe": 0.031030319179889073,
+          "modify": 0.7743975353514277,
+          "search": 0.12581404286258757,
+          "understand": 0.06875810260609558
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.7743975353514277,
+      "llm_call": null,
+      "total_cost": 1.8e-07,
+      "total_latency_ms": 384.80779249221087,
+      "correct": true
+    },
+    {
+      "user": "give me the big picture on how scrumban connects to telegram bot",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 314.1661677509546,
+        "tokens": 14,
+        "cost": 2.8e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.7423632595707309,
+        "proba": {
+          "describe": 0.7423632595707309,
+          "modify": 0.051317053110515445,
+          "search": 0.10958612546190487,
+          "understand": 0.09673356185684875
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.7423632595707309,
+      "llm_call": null,
+      "total_cost": 2.8e-07,
+      "total_latency_ms": 314.1661677509546,
+      "correct": true
+    },
+    {
+      "user": "где parser initializes?",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 353.8452507928014,
+        "tokens": 5,
+        "cost": 1e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.5614604474997167,
+        "proba": {
+          "describe": 0.14522193607309022,
+          "modify": 0.19865570759067433,
+          "search": 0.5614604474997167,
+          "understand": 0.09466190883651875
+        }
+      },
+      "route": "escalated",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "search",
+        "confidence": 0.9,
+        "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+        "latency_ms": 1806.4477499574423,
+        "tokens_in": 100,
+        "tokens_out": 11,
+        "cost": 2.1599999999999996e-05
+      },
+      "total_cost": 2.1699999999999996e-05,
+      "total_latency_ms": 2160.2930007502437,
+      "correct": true
+    },
+    {
+      "user": "поставь главной модель minimax/minimax-m2.5:free",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 397.4684998393059,
+        "tokens": 19,
+        "cost": 3.8e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.5898591618028792,
+        "proba": {
+          "describe": 0.184843280147884,
+          "modify": 0.5898591618028792,
+          "search": 0.12025545366302925,
+          "understand": 0.10504210438620747
+        }
+      },
+      "route": "escalated",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "modify",
+        "confidence": 0.9,
+        "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+        "latency_ms": 728.917040862143,
+        "tokens_in": 111,
+        "tokens_out": 11,
+        "cost": 2.3249999999999996e-05
+      },
+      "total_cost": 2.3629999999999996e-05,
+      "total_latency_ms": 1126.385540701449,
+      "correct": true
+    },
+    {
+      "user": "check current state and tell what next",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 345.702207647264,
+        "tokens": 7,
+        "cost": 1.4e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.4356658003243084,
+        "proba": {
+          "describe": 0.33492557883658663,
+          "modify": 0.10297574300272846,
+          "search": 0.4356658003243084,
+          "understand": 0.1264328778363765
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.8,
+        "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+        "latency_ms": 1962.238916195929,
+        "tokens_in": 102,
+        "tokens_out": 12,
+        "cost": 2.2499999999999998e-05
+      },
+      "total_cost": 2.2639999999999997e-05,
+      "total_latency_ms": 2307.941123843193,
+      "correct": false
+    },
+    {
+      "user": "describe cron scheduler и его взаимодействие с job runner",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 349.72691629081964,
+        "tokens": 15,
+        "cost": 3e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.648953491128,
+        "proba": {
+          "describe": 0.15211111081361267,
+          "modify": 0.0496091209754899,
+          "search": 0.14932627708289728,
+          "understand": 0.648953491128
+        }
+      },
+      "route": "stayed",
+      "final_label": "understand",
+      "final_confidence": 0.648953491128,
+      "llm_call": null,
+      "total_cost": 3e-07,
+      "total_latency_ms": 349.72691629081964,
+      "correct": false
+    },
+    {
+      "user": "посмотри где объявлен enum PacketKind",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 330.4307088255882,
+        "tokens": 13,
+        "cost": 2.6e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.6605526963361886,
+        "proba": {
+          "describe": 0.18211672321017414,
+          "modify": 0.034476842765923756,
+          "search": 0.6605526963361886,
+          "understand": 0.12285373768771332
+        }
+      },
+      "route": "stayed",
+      "final_label": "search",
+      "final_confidence": 0.6605526963361886,
+      "llm_call": null,
+      "total_cost": 2.6e-07,
+      "total_latency_ms": 330.4307088255882,
+      "correct": true
+    },
+    {
+      "user": "добавь правило и запомни регулярно вести followup.md файл",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 313.28900065273046,
+        "tokens": 22,
+        "cost": 4.4e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.7333545886146335,
+        "proba": {
+          "describe": 0.022994002289449433,
+          "modify": 0.7333545886146335,
+          "search": 0.1454962871435408,
+          "understand": 0.09815512195237615
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.7333545886146335,
+      "llm_call": null,
+      "total_cost": 4.4e-07,
+      "total_latency_ms": 313.28900065273046,
+      "correct": true
+    },
+    {
+      "user": "how does the session loop actually break?",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 323.51216673851013,
+        "tokens": 8,
+        "cost": 1.6e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.6658641824756621,
+        "proba": {
+          "describe": 0.20440022406434813,
+          "modify": 0.049154775580002315,
+          "search": 0.08058081787998733,
+          "understand": 0.6658641824756621
+        }
+      },
+      "route": "stayed",
+      "final_label": "understand",
+      "final_confidence": 0.6658641824756621,
+      "llm_call": null,
+      "total_cost": 1.6e-07,
+      "total_latency_ms": 323.51216673851013,
+      "correct": true
+    },
+    {
+      "user": "I have an issue while bilding app in xcode",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 471.6279162093997,
+        "tokens": 11,
+        "cost": 2.2e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.5197978191078821,
+        "proba": {
+          "describe": 0.11911008909850627,
+          "modify": 0.5197978191078821,
+          "search": 0.13955998074301496,
+          "understand": 0.2215321110505966
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.8,
+        "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+        "latency_ms": 745.2167915180326,
+        "tokens_in": 106,
+        "tokens_out": 12,
+        "cost": 2.31e-05
+      },
+      "total_cost": 2.332e-05,
+      "total_latency_ms": 1216.8447077274323,
+      "correct": true
+    },
+    {
+      "user": "locate SessionStart hook handler please",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 358.35875011980534,
+        "tokens": 6,
+        "cost": 1.2000000000000002e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.7398832812716906,
+        "proba": {
+          "describe": 0.08453783300766539,
+          "modify": 0.12086405527485858,
+          "search": 0.7398832812716906,
+          "understand": 0.05471483044578547
+        }
+      },
+      "route": "stayed",
+      "final_label": "search",
+      "final_confidence": 0.7398832812716906,
+      "llm_call": null,
+      "total_cost": 1.2000000000000002e-07,
+      "total_latency_ms": 358.35875011980534,
+      "correct": true
+    },
+    {
+      "user": "where in the code do we compute token savings?",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 588.1992494687438,
+        "tokens": 10,
+        "cost": 2e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.6106552386458295,
+        "proba": {
+          "describe": 0.12722150623310177,
+          "modify": 0.10409347124545933,
+          "search": 0.6106552386458295,
+          "understand": 0.1580297838756094
+        }
+      },
+      "route": "stayed",
+      "final_label": "search",
+      "final_confidence": 0.6106552386458295,
+      "llm_call": null,
+      "total_cost": 2e-07,
+      "total_latency_ms": 588.1992494687438,
+      "correct": true
+    },
+    {
+      "user": "найди все упоминания fallback_model в репо",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 409.8606249317527,
+        "tokens": 15,
+        "cost": 3e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.5627386304247413,
+        "proba": {
+          "describe": 0.06950198153343447,
+          "modify": 0.2501029064374427,
+          "search": 0.5627386304247413,
+          "understand": 0.11765648160438164
+        }
+      },
+      "route": "escalated",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "search",
+        "confidence": 0.9,
+        "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+        "latency_ms": 1281.479999423027,
+        "tokens_in": 106,
+        "tokens_out": 11,
+        "cost": 2.2499999999999998e-05
+      },
+      "total_cost": 2.28e-05,
+      "total_latency_ms": 1691.3406243547797,
+      "correct": true
+    },
+    {
+      "user": "fix the off-by-one in this loop",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 396.92595787346363,
+        "tokens": 8,
+        "cost": 1.6e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.618647687284442,
+        "proba": {
+          "describe": 0.011136580533891386,
+          "modify": 0.618647687284442,
+          "search": 0.03467370700514376,
+          "understand": 0.3355420251765231
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.618647687284442,
+      "llm_call": null,
+      "total_cost": 1.6e-07,
+      "total_latency_ms": 396.92595787346363,
+      "correct": true
+    },
+    {
+      "user": "проверь токены в hermes настройках",
+      "expected": "search",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 358.33375062793493,
+        "tokens": 13,
+        "cost": 2.6e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.5772172798554438,
+        "proba": {
+          "describe": 0.04309237528793395,
+          "modify": 0.26693497494464763,
+          "search": 0.5772172798554438,
+          "understand": 0.11275536991197467
+        }
+      },
+      "route": "escalated",
+      "final_label": "modify",
+      "final_confidence": 0.8,
+      "llm_call": {
+        "label": "modify",
+        "confidence": 0.8,
+        "raw": "{\"label\":\"modify\",\"confidence\":0.8}",
+        "latency_ms": 1188.1421254947782,
+        "tokens_in": 105,
+        "tokens_out": 11,
+        "cost": 2.235e-05
+      },
+      "total_cost": 2.2610000000000002e-05,
+      "total_latency_ms": 1546.475876122713,
+      "correct": false
+    },
+    {
+      "user": "что делает функция validateConfig?",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 449.1334166377783,
+        "tokens": 9,
+        "cost": 1.8e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.3668301310080759,
+        "proba": {
+          "describe": 0.039968922703249685,
+          "modify": 0.30882639881436574,
+          "search": 0.28437454747430874,
+          "understand": 0.3668301310080759
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.9,
+        "raw": "{\"label\":\"understand\",\"confidence\":0.9}",
+        "latency_ms": 712.2960425913334,
+        "tokens_in": 101,
+        "tokens_out": 12,
+        "cost": 2.2349999999999998e-05
+      },
+      "total_cost": 2.253e-05,
+      "total_latency_ms": 1161.4294592291117,
+      "correct": true
+    },
+    {
+      "user": "объясни по шагам что делает run_loop.py",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 357.5617503374815,
+        "tokens": 15,
+        "cost": 3e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.396105353356765,
+        "proba": {
+          "describe": 0.396105353356765,
+          "modify": 0.11960198581505024,
+          "search": 0.1194043420139986,
+          "understand": 0.36488831881418615
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.9,
+        "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+        "latency_ms": 810.5875421315432,
+        "tokens_in": 106,
+        "tokens_out": 15,
+        "cost": 2.4900000000000002e-05
+      },
+      "total_cost": 2.5200000000000003e-05,
+      "total_latency_ms": 1168.1492924690247,
+      "correct": true
+    },
+    {
+      "user": "почему логи не сбрасываются после рестарта?",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 360.5823330581188,
+        "tokens": 23,
+        "cost": 4.6e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.8323412616329545,
+        "proba": {
+          "describe": 0.009266020778573561,
+          "modify": 0.10439727725849202,
+          "search": 0.05399544032998001,
+          "understand": 0.8323412616329545
+        }
+      },
+      "route": "stayed",
+      "final_label": "understand",
+      "final_confidence": 0.8323412616329545,
+      "llm_call": null,
+      "total_cost": 4.6e-07,
+      "total_latency_ms": 360.5823330581188,
+      "correct": true
+    },
+    {
+      "user": "refactor функцию validateConfig",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 300.9045831859112,
+        "tokens": 6,
+        "cost": 1.2000000000000002e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.8257773614629432,
+        "proba": {
+          "describe": 0.02018316975820481,
+          "modify": 0.8257773614629432,
+          "search": 0.08358879656180665,
+          "understand": 0.07045067221704547
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.8257773614629432,
+      "llm_call": null,
+      "total_cost": 1.2000000000000002e-07,
+      "total_latency_ms": 300.9045831859112,
+      "correct": true
+    },
+    {
+      "user": "опиши структуру openclaw и ключевые компоненты",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 848.1245841830969,
+        "tokens": 18,
+        "cost": 3.6e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.6656140287478088,
+        "proba": {
+          "describe": 0.6656140287478088,
+          "modify": 0.2452379728009392,
+          "search": 0.03192344272114247,
+          "understand": 0.05722455573010945
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.6656140287478088,
+      "llm_call": null,
+      "total_cost": 3.6e-07,
+      "total_latency_ms": 848.1245841830969,
+      "correct": true
+    },
+    {
+      "user": "почему disasm падает на этом байте 0xFF 0xC0?",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 316.6525838896632,
+        "tokens": 23,
+        "cost": 4.6e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.8235622274901233,
+        "proba": {
+          "describe": 0.03365874956880716,
+          "modify": 0.062255692855599926,
+          "search": 0.08052333008546964,
+          "understand": 0.8235622274901233
+        }
+      },
+      "route": "stayed",
+      "final_label": "understand",
+      "final_confidence": 0.8235622274901233,
+      "llm_call": null,
+      "total_cost": 4.6e-07,
+      "total_latency_ms": 316.6525838896632,
+      "correct": true
+    },
+    {
+      "user": "опиши текущий флоу обработки задачи от analyst до dev",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 321.0166245698929,
+        "tokens": 18,
+        "cost": 3.6e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.6020527779712309,
+        "proba": {
+          "describe": 0.6020527779712309,
+          "modify": 0.30199861034091935,
+          "search": 0.0706899953866489,
+          "understand": 0.025258616301200836
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.6020527779712309,
+      "llm_call": null,
+      "total_cost": 3.6e-07,
+      "total_latency_ms": 321.0166245698929,
+      "correct": true
+    },
+    {
+      "user": "fix that shit",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 377.5171246379614,
+        "tokens": 3,
+        "cost": 6.000000000000001e-08
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.5748430992918908,
+        "proba": {
+          "describe": 0.04737737906042434,
+          "modify": 0.5748430992918908,
+          "search": 0.11424983594906805,
+          "understand": 0.26352968569861673
+        }
+      },
+      "route": "escalated",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "modify",
+        "confidence": 0.9,
+        "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+        "latency_ms": 1506.271124817431,
+        "tokens_in": 98,
+        "tokens_out": 11,
+        "cost": 2.13e-05
+      },
+      "total_cost": 2.136e-05,
+      "total_latency_ms": 1883.7882494553924,
+      "correct": true
+    },
+    {
+      "user": "опиши, как работает наш scrumban в общих чертах",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 402.1497080102563,
+        "tokens": 19,
+        "cost": 3.8e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.675535464461911,
+        "proba": {
+          "describe": 0.675535464461911,
+          "modify": 0.21938219898515543,
+          "search": 0.04125012764809438,
+          "understand": 0.06383220890483911
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.675535464461911,
+      "llm_call": null,
+      "total_cost": 3.8e-07,
+      "total_latency_ms": 402.1497080102563,
+      "correct": true
+    },
+    {
+      "user": "дай overall architecture, как модули Core/App/CLI связаны",
+      "expected": "describe",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 400.4240417852998,
+        "tokens": 17,
+        "cost": 3.4000000000000003e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.7647795406579788,
+        "proba": {
+          "describe": 0.7647795406579788,
+          "modify": 0.11813529529918211,
+          "search": 0.08179456402502727,
+          "understand": 0.03529060001781179
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.7647795406579788,
+      "llm_call": null,
+      "total_cost": 3.4000000000000003e-07,
+      "total_latency_ms": 400.4240417852998,
+      "correct": true
+    },
+    {
+      "user": "fix the issue",
+      "expected": "modify",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 330.2786247804761,
+        "tokens": 3,
+        "cost": 6.000000000000001e-08
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.848737133154312,
+        "proba": {
+          "describe": 0.014998212164033624,
+          "modify": 0.848737133154312,
+          "search": 0.0501572664479792,
+          "understand": 0.08610738823367514
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.848737133154312,
+      "llm_call": null,
+      "total_cost": 6.000000000000001e-08,
+      "total_latency_ms": 330.2786247804761,
+      "correct": true
+    },
+    {
+      "user": "что за херня с config.yaml?",
+      "expected": "understand",
+      "kind": "holdout",
+      "embed_call": {
+        "latency_ms": 391.1002492532134,
+        "tokens": 10,
+        "cost": 2e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.4576264602730073,
+        "proba": {
+          "describe": 0.0812231020958115,
+          "modify": 0.1256689548267557,
+          "search": 0.4576264602730073,
+          "understand": 0.3354814828044254
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.9,
+        "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+        "latency_ms": 876.4764172956347,
+        "tokens_in": 104,
+        "tokens_out": 15,
+        "cost": 2.46e-05
+      },
+      "total_cost": 2.4800000000000003e-05,
+      "total_latency_ms": 1267.5766665488482,
+      "correct": true
+    },
+    {
+      "user": "?",
+      "expected": "FAIL",
+      "kind": "adv-single-char",
+      "embed_call": {
+        "latency_ms": 387.04158272594213,
+        "tokens": 1,
+        "cost": 2e-08
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.4848401702101896,
+        "proba": {
+          "describe": 0.14339110476574013,
+          "modify": 0.09260420015128178,
+          "search": 0.2791645248727884,
+          "understand": 0.4848401702101896
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.5,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.5,
+        "raw": "{\"label\":\"understand\",\"confidence\":0.5}",
+        "latency_ms": 1272.667083889246,
+        "tokens_in": 96,
+        "tokens_out": 12,
+        "cost": 2.16e-05
+      },
+      "total_cost": 2.162e-05,
+      "total_latency_ms": 1659.7086666151881,
+      "correct": false
+    },
+    {
+      "user": "fix",
+      "expected": "modify",
+      "kind": "adv-single-word",
+      "embed_call": {
+        "latency_ms": 313.43033257871866,
+        "tokens": 1,
+        "cost": 2e-08
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.7232675820925538,
+        "proba": {
+          "describe": 0.01605156662164526,
+          "modify": 0.7232675820925538,
+          "search": 0.08859978217017558,
+          "understand": 0.1720810691156254
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.7232675820925538,
+      "llm_call": null,
+      "total_cost": 2e-08,
+      "total_latency_ms": 313.43033257871866,
+      "correct": true
+    },
+    {
+      "user": "что",
+      "expected": "FAIL",
+      "kind": "adv-single-word",
+      "embed_call": {
+        "latency_ms": 329.7121664509177,
+        "tokens": 2,
+        "cost": 4e-08
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.5955031143980968,
+        "proba": {
+          "describe": 0.12288087922612335,
+          "modify": 0.045692788135626966,
+          "search": 0.23592321824015292,
+          "understand": 0.5955031143980968
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.9,
+        "raw": "{\"label\":\"understand\",\"confidence\":0.9}",
+        "latency_ms": 1009.3644168227911,
+        "tokens_in": 96,
+        "tokens_out": 12,
+        "cost": 2.16e-05
+      },
+      "total_cost": 2.164e-05,
+      "total_latency_ms": 1339.0765832737088,
+      "correct": false
+    },
+    {
+      "user": "найди и удали все упоминания GitHub Copilot из кода",
+      "expected": "modify",
+      "kind": "adv-double-intent",
+      "embed_call": {
+        "latency_ms": 342.5161251798272,
+        "tokens": 19,
+        "cost": 3.8e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.672468659523755,
+        "proba": {
+          "describe": 0.05656173392650882,
+          "modify": 0.672468659523755,
+          "search": 0.23889728277655653,
+          "understand": 0.032072323773179603
+        }
+      },
+      "route": "stayed",
+      "final_label": "modify",
+      "final_confidence": 0.672468659523755,
+      "llm_call": null,
+      "total_cost": 3.8e-07,
+      "total_latency_ms": 342.5161251798272,
+      "correct": true
+    },
+    {
+      "user": "explain why this fails and then fix it permanently",
+      "expected": "modify",
+      "kind": "adv-double-intent",
+      "embed_call": {
+        "latency_ms": 317.6469588652253,
+        "tokens": 9,
+        "cost": 1.8e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.5811841681043582,
+        "proba": {
+          "describe": 0.012636044589628179,
+          "modify": 0.3752518986433175,
+          "search": 0.030927888662696065,
+          "understand": 0.5811841681043582
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.8,
+        "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+        "latency_ms": 779.4814174994826,
+        "tokens_in": 105,
+        "tokens_out": 12,
+        "cost": 2.295e-05
+      },
+      "total_cost": 2.313e-05,
+      "total_latency_ms": 1097.128376364708,
+      "correct": false
+    },
+    {
+      "user": "describe everything and rewrite all bad parts",
+      "expected": "modify",
+      "kind": "adv-triple-intent",
+      "embed_call": {
+        "latency_ms": 339.3079172819853,
+        "tokens": 7,
+        "cost": 1.4e-07
+      },
+      "micro": {
+        "label": "describe",
+        "max_proba": 0.8287196498001362,
+        "proba": {
+          "describe": 0.8287196498001362,
+          "modify": 0.14648832653155008,
+          "search": 0.011593249975004107,
+          "understand": 0.013198773693309428
+        }
+      },
+      "route": "stayed",
+      "final_label": "describe",
+      "final_confidence": 0.8287196498001362,
+      "llm_call": null,
+      "total_cost": 1.4e-07,
+      "total_latency_ms": 339.3079172819853,
+      "correct": false
+    },
+    {
+      "user": "donde esta la funcion validateUser?",
+      "expected": "search",
+      "kind": "adv-spanish",
+      "embed_call": {
+        "latency_ms": 340.3364587575197,
+        "tokens": 8,
+        "cost": 1.6e-07
+      },
+      "micro": {
+        "label": "search",
+        "max_proba": 0.8248389772812662,
+        "proba": {
+          "describe": 0.014314950113077736,
+          "modify": 0.0677730767392019,
+          "search": 0.8248389772812662,
+          "understand": 0.09307299586645422
+        }
+      },
+      "route": "stayed",
+      "final_label": "search",
+      "final_confidence": 0.8248389772812662,
+      "llm_call": null,
+      "total_cost": 1.6e-07,
+      "total_latency_ms": 340.3364587575197,
+      "correct": true
+    },
+    {
+      "user": "wie funktioniert dieser Hook?",
+      "expected": "understand",
+      "kind": "adv-german",
+      "embed_call": {
+        "latency_ms": 1742.5260413438082,
+        "tokens": 6,
+        "cost": 1.2000000000000002e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.8029732934233504,
+        "proba": {
+          "describe": 0.07186069770129787,
+          "modify": 0.022829021624542117,
+          "search": 0.10233698725080946,
+          "understand": 0.8029732934233504
+        }
+      },
+      "route": "stayed",
+      "final_label": "understand",
+      "final_confidence": 0.8029732934233504,
+      "llm_call": null,
+      "total_cost": 1.2000000000000002e-07,
+      "total_latency_ms": 1742.5260413438082,
+      "correct": true
+    },
+    {
+      "user": "lol idk man this whole codebase is just yikes please halp",
+      "expected": "FAIL",
+      "kind": "adv-noisy-no-intent",
+      "embed_call": {
+        "latency_ms": 347.8177925571799,
+        "tokens": 15,
+        "cost": 3e-07
+      },
+      "micro": {
+        "label": "understand",
+        "max_proba": 0.34248351506156854,
+        "proba": {
+          "describe": 0.29200122067192275,
+          "modify": 0.19163392361370737,
+          "search": 0.17388134065280134,
+          "understand": 0.34248351506156854
+        }
+      },
+      "route": "escalated",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "llm_call": {
+        "label": "understand",
+        "confidence": 0.7,
+        "raw": "{\"label\":\"understand\",\"confidence\":0.7}",
+        "latency_ms": 2423.131790943444,
+        "tokens_in": 110,
+        "tokens_out": 12,
+        "cost": 2.3699999999999997e-05
+      },
+      "total_cost": 2.3999999999999997e-05,
+      "total_latency_ms": 2770.9495835006237,
+      "correct": false
+    },
+    {
+      "user": "найди объясни и удали",
+      "expected": "modify",
+      "kind": "adv-ambiguous-chain",
+      "embed_call": {
+        "latency_ms": 338.90675008296967,
+        "tokens": 11,
+        "cost": 2.2e-07
+      },
+      "micro": {
+        "label": "modify",
+        "max_proba": 0.3727423826575243,
+        "proba": {
+          "describe": 0.12917555625413735,
+          "modify": 0.3727423826575243,
+          "search": 0.21094109006539466,
+          "understand": 0.28714097102294367
+        }
+      },
+      "route": "escalated",
+      "final_label": "search",
+      "final_confidence": 0.8,
+      "llm_call": {
+        "label": "search",
+        "confidence": 0.8,
+        "raw": "{\"label\": \"search\", \"confidence\": 0.8}",
+        "latency_ms": 1118.5577493160963,
+        "tokens_in": 102,
+        "tokens_out": 14,
+        "cost": 2.37e-05
+      },
+      "total_cost": 2.392e-05,
+      "total_latency_ms": 1457.464499399066,
+      "correct": false
+    }
+  ]
+}
