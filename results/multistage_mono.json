@@ -1,0 +1,2448 @@
+{
+  "mode": "mono",
+  "model": "gpt-4o-mini",
+  "summary": {
+    "total": 50,
+    "api_calls": 50,
+    "wall_clock_sec": 27.72,
+    "total_cost_usd": 0.005127,
+    "latency_p50_ms": 1977,
+    "latency_p95_ms": 4169,
+    "field_accuracy": {
+      "primary_intent": {
+        "correct": 45,
+        "total": 50,
+        "rate": 0.9
+      },
+      "secondary_intent": {
+        "correct": 46,
+        "total": 50,
+        "rate": 0.92
+      },
+      "target_type": {
+        "correct": 33,
+        "total": 50,
+        "rate": 0.66
+      },
+      "target_name": {
+        "correct": 36,
+        "total": 50,
+        "rate": 0.72
+      },
+      "urgency": {
+        "correct": 47,
+        "total": 50,
+        "rate": 0.94
+      },
+      "negation": {
+        "correct": 50,
+        "total": 50,
+        "rate": 1.0
+      }
+    },
+    "composite_correct": 23,
+    "composite_rate": 0.46
+  },
+  "results": [
+    {
+      "text": "напиши нормальный makefile в корне чтобы можно было собирать и запускать make build make xcode etc",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "Makefile",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "Makefile",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "file",
+            "target_name": "Makefile",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"file\",\n  \"target_name\": \"Makefile\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 5574.478957802057,
+          "input_tokens": 489,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010455,
+      "total_latency_ms": 5574.478957802057,
+      "wall_latency_ms": 5574.478957802057,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "check whats next",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 2884.259417653084,
+          "input_tokens": 468,
+          "output_tokens": 50
+        }
+      ],
+      "total_cost": 0.0001002,
+      "total_latency_ms": 2884.259417653084,
+      "wall_latency_ms": 2884.259417653084,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "найди где мы считаем retry count",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "retry count",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "retry count",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "retry count",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"retry count\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3737.652875483036,
+          "input_tokens": 473,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010215,
+      "total_latency_ms": 3737.652875483036,
+      "wall_latency_ms": 3737.652875483036,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "where does the packet tunnel config live?",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "config",
+        "target_name": "packet tunnel config",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "config",
+        "target_name": "packet tunnel config",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "config",
+            "target_name": "packet tunnel config",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"config\",\n  \"target_name\": \"packet tunnel config\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 4083.9116666465998,
+          "input_tokens": 473,
+          "output_tokens": 53
+        }
+      ],
+      "total_cost": 0.00010275,
+      "total_latency_ms": 4083.9116666465998,
+      "wall_latency_ms": 4083.9116666465998,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "расскажи из чего состоит scrumban проект",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "scrumban",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "scrumban проект",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "describe",
+            "secondary_intent": "none",
+            "target_type": "project",
+            "target_name": "scrumban проект",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"describe\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"project\",\n  \"target_name\": \"scrumban проект\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3703.674165531993,
+          "input_tokens": 475,
+          "output_tokens": 54
+        }
+      ],
+      "total_cost": 0.00010365,
+      "total_latency_ms": 3703.674165531993,
+      "wall_latency_ms": 3703.674165531993,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "feature",
+        "target_name": "AI function naming",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 2460.7776245102286,
+          "input_tokens": 483,
+          "output_tokens": 50
+        }
+      ],
+      "total_cost": 0.00010245,
+      "total_latency_ms": 2460.7776245102286,
+      "wall_latency_ms": 2460.7776245102286,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "почему после merge падает сборка? вот лог",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "bug",
+        "target_name": "build",
+        "urgency": "high",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 2978.9948323741555,
+          "input_tokens": 476,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.000102,
+      "total_latency_ms": 2978.9948323741555,
+      "wall_latency_ms": 2978.9948323741555,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": false,
+        "negation": true
+      }
+    },
+    {
+      "text": "почему у нас два разных клиента для openai?",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "module",
+        "target_name": "openai client",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3775.0714169815183,
+          "input_tokens": 476,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.000102,
+      "total_latency_ms": 3775.0714169815183,
+      "wall_latency_ms": 3775.0714169815183,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "удали dead code в utils.py",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "utils.py",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "utils.py",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "file",
+            "target_name": "utils.py",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"file\",\n  \"target_name\": \"utils.py\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1929.430958814919,
+          "input_tokens": 472,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.000102,
+      "total_latency_ms": 1929.430958814919,
+      "wall_latency_ms": 1929.430958814919,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "посмотри текущее состояние проекта и что дальше по плану",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "search",
+        "target_type": "project",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "project",
+            "target_name": "null",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"project\",\n  \"target_name\": \"null\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3499.355874955654,
+          "input_tokens": 479,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010305,
+      "total_latency_ms": 3499.355874955654,
+      "wall_latency_ms": 3499.355874955654,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": false,
+        "secondary_intent": false,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "find the reason and the issue with smoke-tester",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "understand",
+        "target_type": "module",
+        "target_name": "smoke-tester",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "search",
+        "target_type": "feature",
+        "target_name": "smoke-tester",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "search",
+            "target_type": "feature",
+            "target_name": "smoke-tester",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"search\",\n  \"target_type\": \"feature\",\n  \"target_name\": \"smoke-tester\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3619.212375022471,
+          "input_tokens": 475,
+          "output_tokens": 55
+        }
+      ],
+      "total_cost": 0.00010424999999999999,
+      "total_latency_ms": 3619.212375022471,
+      "wall_latency_ms": 3619.212375022471,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": false,
+        "secondary_intent": false,
+        "target_type": false,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "walk me through processEvent line by line",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "processEvent",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "processEvent",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "processEvent",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"processEvent\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3305.44516723603,
+          "input_tokens": 473,
+          "output_tokens": 53
+        }
+      ],
+      "total_cost": 0.00010275,
+      "total_latency_ms": 3305.44516723603,
+      "wall_latency_ms": 3305.44516723603,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "опиши взаимодействие frontend backend и worker",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "module",
+        "target_name": "frontend/backend/worker",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "feature",
+        "target_name": "взаимодействие frontend backend и worker",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "describe",
+            "secondary_intent": "none",
+            "target_type": "feature",
+            "target_name": "взаимодействие frontend backend и worker",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"describe\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"feature\",\n  \"target_name\": \"взаимодействие frontend backend и worker\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3180.460332892835,
+          "input_tokens": 473,
+          "output_tokens": 59
+        }
+      ],
+      "total_cost": 0.00010635000000000001,
+      "total_latency_ms": 3180.460332892835,
+      "wall_latency_ms": 3180.460332892835,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "не трогай parser, только fix logger",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "logger",
+        "urgency": "normal",
+        "negation": true
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "module",
+        "target_name": "logger",
+        "urgency": "normal",
+        "negation": true
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "module",
+            "target_name": "logger",
+            "urgency": "normal",
+            "negation": true
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"module\",\n  \"target_name\": \"logger\",\n  \"urgency\": \"normal\",\n  \"negation\": true\n}",
+          "latency_ms": 2785.500457510352,
+          "input_tokens": 474,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.00010169999999999999,
+      "total_latency_ms": 2785.500457510352,
+      "wall_latency_ms": 2785.500457510352,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "give me the big picture on how scrumban connects to telegram bot",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "scrumban",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "scrumban",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "project",
+            "target_name": "scrumban",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"project\",\n  \"target_name\": \"scrumban\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3554.040417075157,
+          "input_tokens": 479,
+          "output_tokens": 54
+        }
+      ],
+      "total_cost": 0.00010425,
+      "total_latency_ms": 3554.040417075157,
+      "wall_latency_ms": 3554.040417075157,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": false,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "где parser initializes?",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "parser",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "parser",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "parser",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"parser\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 4113.440457731485,
+          "input_tokens": 470,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.00010109999999999999,
+      "total_latency_ms": 4113.440457731485,
+      "wall_latency_ms": 4113.440457731485,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "поставь главной модель minimax/minimax-m2.5:free",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "config",
+        "target_name": "minimax/minimax-m2.5:free",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "config",
+        "target_name": "minimax/minimax-m2.5:free",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "config",
+            "target_name": "minimax/minimax-m2.5:free",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"config\",\n  \"target_name\": \"minimax/minimax-m2.5:free\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 2622.589415870607,
+          "input_tokens": 481,
+          "output_tokens": 60
+        }
+      ],
+      "total_cost": 0.00010815,
+      "total_latency_ms": 2622.589415870607,
+      "wall_latency_ms": 2622.589415870607,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "check current state and tell what next",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "search",
+        "target_type": "project",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3760.8723333105445,
+          "input_tokens": 472,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.0001014,
+      "total_latency_ms": 3760.8723333105445,
+      "wall_latency_ms": 3760.8723333105445,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": false,
+        "secondary_intent": false,
+        "target_type": false,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "describe cron scheduler и его взаимодействие с job runner",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "module",
+        "target_name": "cron scheduler",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "module",
+        "target_name": "cron scheduler",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "describe",
+            "secondary_intent": "none",
+            "target_type": "module",
+            "target_name": "cron scheduler",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"describe\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"module\",\n  \"target_name\": \"cron scheduler\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1688.8525420799851,
+          "input_tokens": 475,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010245,
+      "total_latency_ms": 1688.8525420799851,
+      "wall_latency_ms": 1688.8525420799851,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "посмотри где объявлен enum PacketKind",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "PacketKind",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "PacketKind",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "PacketKind",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"PacketKind\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1838.4436247870326,
+          "input_tokens": 474,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010229999999999999,
+      "total_latency_ms": 1838.4436247870326,
+      "wall_latency_ms": 1838.4436247870326,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "добавь правило и запомни регулярно вести followup.md файл",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "followup.md",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "followup.md",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "file",
+            "target_name": "followup.md",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"file\",\n  \"target_name\": \"followup.md\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1678.4380842000246,
+          "input_tokens": 479,
+          "output_tokens": 53
+        }
+      ],
+      "total_cost": 0.00010365,
+      "total_latency_ms": 1678.4380842000246,
+      "wall_latency_ms": 1678.4380842000246,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "how does the session loop actually break?",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "session loop",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1646.2223753333092,
+          "input_tokens": 473,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.00010155,
+      "total_latency_ms": 1646.2223753333092,
+      "wall_latency_ms": 1646.2223753333092,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "I have an issue while bilding app in xcode",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "bug",
+        "target_name": "xcode build",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "xcode",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "project",
+            "target_name": "xcode",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"project\",\n  \"target_name\": \"xcode\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3921.7567928135395,
+          "input_tokens": 476,
+          "output_tokens": 53
+        }
+      ],
+      "total_cost": 0.0001032,
+      "total_latency_ms": 3921.7567928135395,
+      "wall_latency_ms": 3921.7567928135395,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "locate SessionStart hook handler please",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "SessionStart hook",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "SessionStart",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "SessionStart",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"SessionStart\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1598.4239587560296,
+          "input_tokens": 472,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.000102,
+      "total_latency_ms": 1598.4239587560296,
+      "wall_latency_ms": 1598.4239587560296,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "where in the code do we compute token savings?",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "token savings",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "token savings",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "token savings",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"token savings\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1700.8205000311136,
+          "input_tokens": 475,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010245,
+      "total_latency_ms": 1700.8205000311136,
+      "wall_latency_ms": 1700.8205000311136,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "найди все упоминания fallback_model в репо",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "config",
+        "target_name": "fallback_model",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "fallback_model",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "project",
+            "target_name": "fallback_model",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"project\",\n  \"target_name\": \"fallback_model\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1547.681082971394,
+          "input_tokens": 476,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.0001026,
+      "total_latency_ms": 1547.681082971394,
+      "wall_latency_ms": 1547.681082971394,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "fix the off-by-one in this loop",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "bug",
+        "target_name": "off-by-one loop",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1663.203458301723,
+          "input_tokens": 473,
+          "output_tokens": 50
+        }
+      ],
+      "total_cost": 0.00010095,
+      "total_latency_ms": 1663.203458301723,
+      "wall_latency_ms": 1663.203458301723,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "проверь токены в hermes настройках",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "config",
+        "target_name": "hermes tokens",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "config",
+        "target_name": "hermes",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "config",
+            "target_name": "hermes",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"config\",\n  \"target_name\": \"hermes\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1977.136790752411,
+          "input_tokens": 475,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010245,
+      "total_latency_ms": 1977.136790752411,
+      "wall_latency_ms": 1977.136790752411,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "что делает функция validateConfig?",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "validateConfig",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "validateConfig",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "validateConfig",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"validateConfig\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1673.1946663931012,
+          "input_tokens": 471,
+          "output_tokens": 53
+        }
+      ],
+      "total_cost": 0.00010245,
+      "total_latency_ms": 1673.1946663931012,
+      "wall_latency_ms": 1673.1946663931012,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "объясни по шагам что делает run_loop.py",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "run_loop.py",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "run_loop.py",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "file",
+            "target_name": "run_loop.py",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"file\",\n  \"target_name\": \"run_loop.py\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 2212.532125413418,
+          "input_tokens": 476,
+          "output_tokens": 54
+        }
+      ],
+      "total_cost": 0.0001038,
+      "total_latency_ms": 2212.532125413418,
+      "wall_latency_ms": 2212.532125413418,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "почему логи не сбрасываются после рестарта?",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "bug",
+        "target_name": "logs",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1442.3810839653015,
+          "input_tokens": 477,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.00010214999999999999,
+      "total_latency_ms": 1442.3810839653015,
+      "wall_latency_ms": 1442.3810839653015,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "refactor функцию validateConfig",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "validateConfig",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "validateConfig",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "validateConfig",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"validateConfig\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1443.2509168982506,
+          "input_tokens": 470,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010169999999999999,
+      "total_latency_ms": 1443.2509168982506,
+      "wall_latency_ms": 1443.2509168982506,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "опиши структуру openclaw и ключевые компоненты",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "openclaw",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "openclaw",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "describe",
+            "secondary_intent": "none",
+            "target_type": "project",
+            "target_name": "openclaw",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"describe\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"project\",\n  \"target_name\": \"openclaw\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 17574.931416660547,
+          "input_tokens": 477,
+          "output_tokens": 53
+        }
+      ],
+      "total_cost": 0.00010334999999999999,
+      "total_latency_ms": 17574.931416660547,
+      "wall_latency_ms": 17574.931416660547,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "почему disasm падает на этом байте 0xFF 0xC0?",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "bug",
+        "target_name": "disasm",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1273.89679197222,
+          "input_tokens": 485,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.00010334999999999999,
+      "total_latency_ms": 1273.89679197222,
+      "wall_latency_ms": 1273.89679197222,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "опиши текущий флоу обработки задачи от analyst до dev",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "feature",
+        "target_name": "task flow",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "feature",
+        "target_name": "флоу обработки задачи",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "describe",
+            "secondary_intent": "none",
+            "target_type": "feature",
+            "target_name": "флоу обработки задачи",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"describe\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"feature\",\n  \"target_name\": \"флоу обработки задачи\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1406.7158345133066,
+          "input_tokens": 478,
+          "output_tokens": 55
+        }
+      ],
+      "total_cost": 0.0001047,
+      "total_latency_ms": 1406.7158345133066,
+      "wall_latency_ms": 1406.7158345133066,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "fix that shit",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "high",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "high",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "high",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"high\",\n  \"negation\": false\n}",
+          "latency_ms": 4169.393124990165,
+          "input_tokens": 468,
+          "output_tokens": 50
+        }
+      ],
+      "total_cost": 0.0001002,
+      "total_latency_ms": 4169.393124990165,
+      "wall_latency_ms": 4169.393124990165,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "опиши, как работает наш scrumban в общих чертах",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "scrumban",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": "scrumban",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "describe",
+            "secondary_intent": "none",
+            "target_type": "project",
+            "target_name": "scrumban",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"describe\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"project\",\n  \"target_name\": \"scrumban\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1448.3935832977295,
+          "input_tokens": 479,
+          "output_tokens": 53
+        }
+      ],
+      "total_cost": 0.00010365,
+      "total_latency_ms": 1448.3935832977295,
+      "wall_latency_ms": 1448.3935832977295,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "дай overall architecture, как модули Core/App/CLI связаны",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "module",
+        "target_name": "Core/App/CLI",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "module",
+        "target_name": "Core/App/CLI",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "describe",
+            "secondary_intent": "none",
+            "target_type": "module",
+            "target_name": "Core/App/CLI",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"describe\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"module\",\n  \"target_name\": \"Core/App/CLI\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1466.6682919487357,
+          "input_tokens": 479,
+          "output_tokens": 54
+        }
+      ],
+      "total_cost": 0.00010425,
+      "total_latency_ms": 1466.6682919487357,
+      "wall_latency_ms": 1466.6682919487357,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "fix the issue",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "bug",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "bug",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "bug",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"bug\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1406.2238335609436,
+          "input_tokens": 468,
+          "output_tokens": 50
+        }
+      ],
+      "total_cost": 0.0001002,
+      "total_latency_ms": 1406.2238335609436,
+      "wall_latency_ms": 1406.2238335609436,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "что за херня с config.yaml?",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "file",
+        "target_name": "config.yaml",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "config",
+        "target_name": "config.yaml",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "config",
+            "target_name": "config.yaml",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"config\",\n  \"target_name\": \"config.yaml\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1772.3788749426603,
+          "input_tokens": 474,
+          "output_tokens": 53
+        }
+      ],
+      "total_cost": 0.0001029,
+      "total_latency_ms": 1772.3788749426603,
+      "wall_latency_ms": 1772.3788749426603,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "?",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "low",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "low",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "low",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"low\",\n  \"negation\": false\n}",
+          "latency_ms": 1829.6964997425675,
+          "input_tokens": 466,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.00010049999999999999,
+      "total_latency_ms": 1829.6964997425675,
+      "wall_latency_ms": 1829.6964997425675,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "fix",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "high",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "high",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"high\",\n  \"negation\": false\n}",
+          "latency_ms": 2163.602833636105,
+          "input_tokens": 466,
+          "output_tokens": 50
+        }
+      ],
+      "total_cost": 9.989999999999999e-05,
+      "total_latency_ms": 2163.602833636105,
+      "wall_latency_ms": 2163.602833636105,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": false,
+        "negation": true
+      }
+    },
+    {
+      "text": "что",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "low",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "low",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "low",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"low\",\n  \"negation\": false\n}",
+          "latency_ms": 1715.758416801691,
+          "input_tokens": 466,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.00010049999999999999,
+      "total_latency_ms": 1715.758416801691,
+      "wall_latency_ms": 1715.758416801691,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "найди и удали все упоминания GitHub Copilot из кода",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "search",
+        "target_type": "other",
+        "target_name": "GitHub Copilot",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "search",
+        "target_type": "other",
+        "target_name": "GitHub Copilot",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "search",
+            "target_type": "other",
+            "target_name": "GitHub Copilot",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"search\",\n  \"target_type\": \"other\",\n  \"target_name\": \"GitHub Copilot\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1673.2324995100498,
+          "input_tokens": 481,
+          "output_tokens": 54
+        }
+      ],
+      "total_cost": 0.00010455,
+      "total_latency_ms": 1673.2324995100498,
+      "wall_latency_ms": 1673.2324995100498,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "explain why this fails and then fix it permanently",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "understand",
+        "target_type": "bug",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "understand",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "understand",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"understand\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1596.4210834354162,
+          "input_tokens": 475,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.00010185,
+      "total_latency_ms": 1596.4210834354162,
+      "wall_latency_ms": 1596.4210834354162,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "describe everything and rewrite all bad parts",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "describe",
+        "target_type": "project",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "describe",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "describe",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"describe\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1754.8095844686031,
+          "input_tokens": 472,
+          "output_tokens": 50
+        }
+      ],
+      "total_cost": 0.0001008,
+      "total_latency_ms": 1754.8095844686031,
+      "wall_latency_ms": 1754.8095844686031,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": false,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "donde esta la funcion validateUser?",
+      "expected": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "validateUser",
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "search",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "validateUser",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "search",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "validateUser",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"search\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"validateUser\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 3785.1782087236643,
+          "input_tokens": 473,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010215,
+      "total_latency_ms": 3785.1782087236643,
+      "wall_latency_ms": 3785.1782087236643,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "wie funktioniert dieser Hook?",
+      "expected": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "function",
+        "target_name": "Hook",
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "function",
+            "target_name": "Hook",
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"function\",\n  \"target_name\": \"Hook\",\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 2313.2281256839633,
+          "input_tokens": 470,
+          "output_tokens": 52
+        }
+      ],
+      "total_cost": 0.00010169999999999999,
+      "total_latency_ms": 2313.2281256839633,
+      "wall_latency_ms": 2313.2281256839633,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": false,
+        "urgency": true,
+        "negation": true
+      }
+    },
+    {
+      "text": "lol idk man this whole codebase is just yikes please halp",
+      "expected": {
+        "primary_intent": "describe",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": null,
+        "urgency": "low",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "understand",
+        "secondary_intent": "none",
+        "target_type": "project",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "understand",
+            "secondary_intent": "none",
+            "target_type": "project",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"understand\",\n  \"secondary_intent\": \"none\",\n  \"target_type\": \"project\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1452.1378334611654,
+          "input_tokens": 480,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.0001026,
+      "total_latency_ms": 1452.1378334611654,
+      "wall_latency_ms": 1452.1378334611654,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": false,
+        "secondary_intent": true,
+        "target_type": true,
+        "target_name": true,
+        "urgency": false,
+        "negation": true
+      }
+    },
+    {
+      "text": "найди объясни и удали",
+      "expected": {
+        "primary_intent": "modify",
+        "secondary_intent": "search",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "predicted": {
+        "primary_intent": "modify",
+        "secondary_intent": "understand",
+        "target_type": "other",
+        "target_name": null,
+        "urgency": "normal",
+        "negation": false
+      },
+      "calls": [
+        {
+          "stage": "mono",
+          "parsed": {
+            "primary_intent": "modify",
+            "secondary_intent": "understand",
+            "target_type": "other",
+            "target_name": null,
+            "urgency": "normal",
+            "negation": false
+          },
+          "raw": "{\n  \"primary_intent\": \"modify\",\n  \"secondary_intent\": \"understand\",\n  \"target_type\": \"other\",\n  \"target_name\": null,\n  \"urgency\": \"normal\",\n  \"negation\": false\n}",
+          "latency_ms": 1384.8703745752573,
+          "input_tokens": 472,
+          "output_tokens": 51
+        }
+      ],
+      "total_cost": 0.0001014,
+      "total_latency_ms": 1384.8703745752573,
+      "wall_latency_ms": 1384.8703745752573,
+      "n_calls": 1,
+      "field_match": {
+        "primary_intent": true,
+        "secondary_intent": false,
+        "target_type": true,
+        "target_name": true,
+        "urgency": true,
+        "negation": true
+      }
+    }
+  ]
+}
