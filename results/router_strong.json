@@ -1,0 +1,1076 @@
+{
+  "mode": "strong",
+  "config": {
+    "cheap_model": "gpt-4o-mini",
+    "strong_model": "gpt-4o",
+    "threshold": 0.85,
+    "temperature": 0.0
+  },
+  "summary": {
+    "total": 50,
+    "holdout_total": 40,
+    "adv_total": 10,
+    "correct_total": 40,
+    "holdout_correct": 35,
+    "routes": {
+      "gpt-4o": 50
+    },
+    "api_calls": 50,
+    "wall_clock_sec": 17.36,
+    "total_cost_usd": 0.02574,
+    "latency_p50_ms": 794,
+    "latency_p95_ms": 1746
+  },
+  "results": [
+    {
+      "user": "напиши нормальный makefile в корне чтобы можно было собирать и запускать make build make xcode etc",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 1211.516167037189,
+          "input_tokens": 163,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005475,
+      "total_latency_ms": 1211.516167037189
+    },
+    {
+      "user": "check whats next",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.7}",
+          "latency_ms": 1257.3303328827024,
+          "input_tokens": 142,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.000495,
+      "total_latency_ms": 1257.3303328827024
+    },
+    {
+      "user": "найди где мы считаем retry count",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 1250.6417920812964,
+          "input_tokens": 147,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005074999999999999,
+      "total_latency_ms": 1250.6417920812964
+    },
+    {
+      "user": "where does the packet tunnel config live?",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 1746.172540821135,
+          "input_tokens": 147,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005074999999999999,
+      "total_latency_ms": 1746.172540821135
+    },
+    {
+      "user": "расскажи из чего состоит scrumban проект",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 1107.5723338872194,
+          "input_tokens": 149,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005124999999999999,
+      "total_latency_ms": 1107.5723338872194
+    },
+    {
+      "user": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 17362.42904048413,
+          "input_tokens": 157,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005325,
+      "total_latency_ms": 17362.42904048413
+    },
+    {
+      "user": "почему после merge падает сборка? вот лог",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 1151.2108333408833,
+          "input_tokens": 150,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.000525,
+      "total_latency_ms": 1151.2108333408833
+    },
+    {
+      "user": "почему у нас два разных клиента для openai?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.8}",
+          "latency_ms": 17282.270584255457,
+          "input_tokens": 150,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.000525,
+      "total_latency_ms": 17282.270584255457
+    },
+    {
+      "user": "удали dead code в utils.py",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 1.0,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 1.0,
+          "raw": "{\"label\": \"modify\", \"confidence\": 1.0}",
+          "latency_ms": 779.6699171885848,
+          "input_tokens": 146,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.000505,
+      "total_latency_ms": 779.6699171885848
+    },
+    {
+      "user": "посмотри текущее состояние проекта и что дальше по плану",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.7}",
+          "latency_ms": 1133.4784170612693,
+          "input_tokens": 153,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005325,
+      "total_latency_ms": 1133.4784170612693
+    },
+    {
+      "user": "find the reason and the issue with smoke-tester",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.7}",
+          "latency_ms": 711.9239997118711,
+          "input_tokens": 149,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005124999999999999,
+      "total_latency_ms": 711.9239997118711
+    },
+    {
+      "user": "walk me through processEvent line by line",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 704.1059592738748,
+          "input_tokens": 147,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005175,
+      "total_latency_ms": 704.1059592738748
+    },
+    {
+      "user": "опиши взаимодействие frontend backend и worker",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 565.0233756750822,
+          "input_tokens": 147,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005074999999999999,
+      "total_latency_ms": 565.0233756750822
+    },
+    {
+      "user": "не трогай parser, только fix logger",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 839.0015419572592,
+          "input_tokens": 148,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.00051,
+      "total_latency_ms": 839.0015419572592
+    },
+    {
+      "user": "give me the big picture on how scrumban connects to telegram bot",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.8}",
+          "latency_ms": 732.8337095677853,
+          "input_tokens": 153,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005325,
+      "total_latency_ms": 732.8337095677853
+    },
+    {
+      "user": "где parser initializes?",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 721.1949164047837,
+          "input_tokens": 144,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005,
+      "total_latency_ms": 721.1949164047837
+    },
+    {
+      "user": "поставь главной модель minimax/minimax-m2.5:free",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.8}",
+          "latency_ms": 681.0851665213704,
+          "input_tokens": 155,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005275,
+      "total_latency_ms": 681.0851665213704
+    },
+    {
+      "user": "check current state and tell what next",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.7}",
+          "latency_ms": 610.4255821555853,
+          "input_tokens": 146,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.000515,
+      "total_latency_ms": 610.4255821555853
+    },
+    {
+      "user": "describe cron scheduler и его взаимодействие с job runner",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 1032.442083582282,
+          "input_tokens": 149,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005124999999999999,
+      "total_latency_ms": 1032.442083582282
+    },
+    {
+      "user": "посмотри где объявлен enum PacketKind",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 713.2113743573427,
+          "input_tokens": 148,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.00051,
+      "total_latency_ms": 713.2113743573427
+    },
+    {
+      "user": "добавь правило и запомни регулярно вести followup.md файл",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.8}",
+          "latency_ms": 972.2619578242302,
+          "input_tokens": 153,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005225,
+      "total_latency_ms": 972.2619578242302
+    },
+    {
+      "user": "how does the session loop actually break?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 621.1241669952869,
+          "input_tokens": 147,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005175,
+      "total_latency_ms": 621.1241669952869
+    },
+    {
+      "user": "I have an issue while bilding app in xcode",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.7}",
+          "latency_ms": 741.1913340911269,
+          "input_tokens": 150,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005149999999999999,
+      "total_latency_ms": 741.1913340911269
+    },
+    {
+      "user": "locate SessionStart hook handler please",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 706.0247082263231,
+          "input_tokens": 146,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.000505,
+      "total_latency_ms": 706.0247082263231
+    },
+    {
+      "user": "where in the code do we compute token savings?",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 746.2614998221397,
+          "input_tokens": 149,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005124999999999999,
+      "total_latency_ms": 746.2614998221397
+    },
+    {
+      "user": "найди все упоминания fallback_model в репо",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 1084.1742921620607,
+          "input_tokens": 150,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005149999999999999,
+      "total_latency_ms": 1084.1742921620607
+    },
+    {
+      "user": "fix the off-by-one in this loop",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 753.6953333765268,
+          "input_tokens": 147,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005074999999999999,
+      "total_latency_ms": 753.6953333765268
+    },
+    {
+      "user": "проверь токены в hermes настройках",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.7}",
+          "latency_ms": 1303.1874159350991,
+          "input_tokens": 149,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005124999999999999,
+      "total_latency_ms": 1303.1874159350991
+    },
+    {
+      "user": "что делает функция validateConfig?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 896.6681249439716,
+          "input_tokens": 145,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005124999999999999,
+      "total_latency_ms": 896.6681249439716
+    },
+    {
+      "user": "объясни по шагам что делает run_loop.py",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 1132.4801249429584,
+          "input_tokens": 150,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.000525,
+      "total_latency_ms": 1132.4801249429584
+    },
+    {
+      "user": "почему логи не сбрасываются после рестарта?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 800.6927920505404,
+          "input_tokens": 151,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005275,
+      "total_latency_ms": 800.6927920505404
+    },
+    {
+      "user": "refactor функцию validateConfig",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 671.1765844374895,
+          "input_tokens": 144,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005,
+      "total_latency_ms": 671.1765844374895
+    },
+    {
+      "user": "опиши структуру openclaw и ключевые компоненты",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 665.5433336272836,
+          "input_tokens": 151,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005175,
+      "total_latency_ms": 665.5433336272836
+    },
+    {
+      "user": "почему disasm падает на этом байте 0xFF 0xC0?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 793.7981253489852,
+          "input_tokens": 159,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005475,
+      "total_latency_ms": 793.7981253489852
+    },
+    {
+      "user": "опиши текущий флоу обработки задачи от analyst до dev",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 721.8990828841925,
+          "input_tokens": 152,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005200000000000001,
+      "total_latency_ms": 721.8990828841925
+    },
+    {
+      "user": "fix that shit",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.7}",
+          "latency_ms": 814.388582482934,
+          "input_tokens": 142,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.000495,
+      "total_latency_ms": 814.388582482934
+    },
+    {
+      "user": "опиши, как работает наш scrumban в общих чертах",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 700.5839999765158,
+          "input_tokens": 153,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005225,
+      "total_latency_ms": 700.5839999765158
+    },
+    {
+      "user": "дай overall architecture, как модули Core/App/CLI связаны",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 812.4903328716755,
+          "input_tokens": 153,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005225,
+      "total_latency_ms": 812.4903328716755
+    },
+    {
+      "user": "fix the issue",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.7}",
+          "latency_ms": 826.0973757132888,
+          "input_tokens": 142,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.000495,
+      "total_latency_ms": 826.0973757132888
+    },
+    {
+      "user": "что за херня с config.yaml?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.7}",
+          "latency_ms": 783.1484591588378,
+          "input_tokens": 148,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005200000000000001,
+      "total_latency_ms": 783.1484591588378
+    },
+    {
+      "user": "?",
+      "expected": "FAIL",
+      "kind": "adv-single-char",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.5,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.5,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.5}",
+          "latency_ms": 867.5476666539907,
+          "input_tokens": 140,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.00049,
+      "total_latency_ms": 867.5476666539907
+    },
+    {
+      "user": "fix",
+      "expected": "modify",
+      "kind": "adv-single-word",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.8}",
+          "latency_ms": 784.6416654065251,
+          "input_tokens": 140,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.00049,
+      "total_latency_ms": 784.6416654065251
+    },
+    {
+      "user": "что",
+      "expected": "FAIL",
+      "kind": "adv-single-word",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.4,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.4,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.4}",
+          "latency_ms": 751.090332865715,
+          "input_tokens": 140,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005,
+      "total_latency_ms": 751.090332865715
+    },
+    {
+      "user": "найди и удали все упоминания GitHub Copilot из кода",
+      "expected": "modify",
+      "kind": "adv-double-intent",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 960.9898747876287,
+          "input_tokens": 155,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005275,
+      "total_latency_ms": 960.9898747876287
+    },
+    {
+      "user": "explain why this fails and then fix it permanently",
+      "expected": "modify",
+      "kind": "adv-double-intent",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.8}",
+          "latency_ms": 742.495708167553,
+          "input_tokens": 149,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005225,
+      "total_latency_ms": 742.495708167553
+    },
+    {
+      "user": "describe everything and rewrite all bad parts",
+      "expected": "modify",
+      "kind": "adv-triple-intent",
+      "route": "gpt-4o",
+      "final_label": "describe",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "describe",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.7}",
+          "latency_ms": 1223.5393337905407,
+          "input_tokens": 146,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.000505,
+      "total_latency_ms": 1223.5393337905407
+    },
+    {
+      "user": "donde esta la funcion validateUser?",
+      "expected": "search",
+      "kind": "adv-spanish",
+      "route": "gpt-4o",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 728.2320829108357,
+          "input_tokens": 147,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.0005074999999999999,
+      "total_latency_ms": 728.2320829108357
+    },
+    {
+      "user": "wie funktioniert dieser Hook?",
+      "expected": "understand",
+      "kind": "adv-german",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 929.177874699235,
+          "input_tokens": 144,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.00051,
+      "total_latency_ms": 929.177874699235
+    },
+    {
+      "user": "lol idk man this whole codebase is just yikes please halp",
+      "expected": "FAIL",
+      "kind": "adv-noisy-no-intent",
+      "route": "gpt-4o",
+      "final_label": "understand",
+      "final_confidence": 0.5,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "understand",
+          "confidence": 0.5,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.5}",
+          "latency_ms": 749.1576252505183,
+          "input_tokens": 154,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 0.0005350000000000001,
+      "total_latency_ms": 749.1576252505183
+    },
+    {
+      "user": "найди объясни и удали",
+      "expected": "modify",
+      "kind": "adv-ambiguous-chain",
+      "route": "gpt-4o",
+      "final_label": "modify",
+      "final_confidence": 0.5,
+      "calls": [
+        {
+          "model": "gpt-4o",
+          "label": "modify",
+          "confidence": 0.5,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.5}",
+          "latency_ms": 527.306417003274,
+          "input_tokens": 146,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 0.000505,
+      "total_latency_ms": 527.306417003274
+    }
+  ]
+}

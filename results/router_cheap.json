@@ -1,0 +1,1076 @@
+{
+  "mode": "cheap",
+  "config": {
+    "cheap_model": "gpt-4o-mini",
+    "strong_model": "gpt-4o",
+    "threshold": 0.85,
+    "temperature": 0.0
+  },
+  "summary": {
+    "total": 50,
+    "holdout_total": 40,
+    "adv_total": 10,
+    "correct_total": 43,
+    "holdout_correct": 36,
+    "routes": {
+      "gpt-4o-mini": 50
+    },
+    "api_calls": 50,
+    "wall_clock_sec": 7.24,
+    "total_cost_usd": 0.001489,
+    "latency_p50_ms": 943,
+    "latency_p95_ms": 1811
+  },
+  "results": [
+    {
+      "user": "напиши нормальный makefile в корне чтобы можно было собирать и запускать make build make xcode etc",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 1750.9102914482355,
+          "input_tokens": 163,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.285e-05,
+      "total_latency_ms": 1750.9102914482355
+    },
+    {
+      "user": "check whats next",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"search\",\"confidence\":0.7}",
+          "latency_ms": 1763.492874801159,
+          "input_tokens": 142,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.79e-05,
+      "total_latency_ms": 1763.492874801159
+    },
+    {
+      "user": "найди где мы считаем retry count",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"search\",\"confidence\":0.8}",
+          "latency_ms": 1770.1681666076183,
+          "input_tokens": 147,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.865e-05,
+      "total_latency_ms": 1770.1681666076183
+    },
+    {
+      "user": "where does the packet tunnel config live?",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "latency_ms": 1752.1750424057245,
+          "input_tokens": 147,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.865e-05,
+      "total_latency_ms": 1752.1750424057245
+    },
+    {
+      "user": "расскажи из чего состоит scrumban проект",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 1953.8557911291718,
+          "input_tokens": 149,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.0749999999999995e-05,
+      "total_latency_ms": 1953.8557911291718
+    },
+    {
+      "user": "еще добавь возможность сгенерить имена для одной или нескольких выбранных функций",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 1811.253416351974,
+          "input_tokens": 157,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.195e-05,
+      "total_latency_ms": 1811.253416351974
+    },
+    {
+      "user": "почему после merge падает сборка? вот лог",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.8}",
+          "latency_ms": 2069.949584081769,
+          "input_tokens": 150,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 3.15e-05,
+      "total_latency_ms": 2069.949584081769
+    },
+    {
+      "user": "почему у нас два разных клиента для openai?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+          "latency_ms": 1747.9370832443237,
+          "input_tokens": 150,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.9699999999999997e-05,
+      "total_latency_ms": 1747.9370832443237
+    },
+    {
+      "user": "удали dead code в utils.py",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 866.9370831921697,
+          "input_tokens": 146,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.0299999999999998e-05,
+      "total_latency_ms": 866.9370831921697
+    },
+    {
+      "user": "посмотри текущее состояние проекта и что дальше по плану",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.7}",
+          "latency_ms": 940.3846254572272,
+          "input_tokens": 153,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 3.195e-05,
+      "total_latency_ms": 940.3846254572272
+    },
+    {
+      "user": "find the reason and the issue with smoke-tester",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"search\",\"confidence\":0.8}",
+          "latency_ms": 903.5693751648068,
+          "input_tokens": 149,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.895e-05,
+      "total_latency_ms": 903.5693751648068
+    },
+    {
+      "user": "walk me through processEvent line by line",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 838.2248347625136,
+          "input_tokens": 147,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 3.1049999999999996e-05,
+      "total_latency_ms": 838.2248347625136
+    },
+    {
+      "user": "опиши взаимодействие frontend backend и worker",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 949.4564160704613,
+          "input_tokens": 147,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.0449999999999995e-05,
+      "total_latency_ms": 949.4564160704613
+    },
+    {
+      "user": "не трогай parser, только fix logger",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+          "latency_ms": 850.0626254826784,
+          "input_tokens": 148,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.8799999999999995e-05,
+      "total_latency_ms": 850.0626254826784
+    },
+    {
+      "user": "give me the big picture on how scrumban connects to telegram bot",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.7}",
+          "latency_ms": 864.6343750879169,
+          "input_tokens": 153,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 3.0149999999999998e-05,
+      "total_latency_ms": 864.6343750879169
+    },
+    {
+      "user": "где parser initializes?",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"search\",\"confidence\":0.8}",
+          "latency_ms": 797.2472496330738,
+          "input_tokens": 144,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.82e-05,
+      "total_latency_ms": 797.2472496330738
+    },
+    {
+      "user": "поставь главной модель minimax/minimax-m2.5:free",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 979.0173750370741,
+          "input_tokens": 155,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.165e-05,
+      "total_latency_ms": 979.0173750370741
+    },
+    {
+      "user": "check current state and tell what next",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.7}",
+          "latency_ms": 910.9463756904006,
+          "input_tokens": 146,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.91e-05,
+      "total_latency_ms": 910.9463756904006
+    },
+    {
+      "user": "describe cron scheduler и его взаимодействие с job runner",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 1188.747207634151,
+          "input_tokens": 149,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.0749999999999995e-05,
+      "total_latency_ms": 1188.747207634151
+    },
+    {
+      "user": "посмотри где объявлен enum PacketKind",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "latency_ms": 923.2999999076128,
+          "input_tokens": 148,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.8799999999999995e-05,
+      "total_latency_ms": 923.2999999076128
+    },
+    {
+      "user": "добавь правило и запомни регулярно вести followup.md файл",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 811.4208746701479,
+          "input_tokens": 153,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.1349999999999996e-05,
+      "total_latency_ms": 811.4208746701479
+    },
+    {
+      "user": "how does the session loop actually break?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.9}",
+          "latency_ms": 754.1074575856328,
+          "input_tokens": 147,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.9249999999999996e-05,
+      "total_latency_ms": 754.1074575856328
+    },
+    {
+      "user": "I have an issue while bilding app in xcode",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.7}",
+          "latency_ms": 759.3844998627901,
+          "input_tokens": 150,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.9699999999999997e-05,
+      "total_latency_ms": 759.3844998627901
+    },
+    {
+      "user": "locate SessionStart hook handler please",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "latency_ms": 764.929499477148,
+          "input_tokens": 146,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.85e-05,
+      "total_latency_ms": 764.929499477148
+    },
+    {
+      "user": "where in the code do we compute token savings?",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "latency_ms": 1529.8767918720841,
+          "input_tokens": 149,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.895e-05,
+      "total_latency_ms": 1529.8767918720841
+    },
+    {
+      "user": "найди все упоминания fallback_model в репо",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"search\", \"confidence\": 0.9}",
+          "latency_ms": 763.7241249904037,
+          "input_tokens": 150,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.09e-05,
+      "total_latency_ms": 763.7241249904037
+    },
+    {
+      "user": "fix the off-by-one in this loop",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 1041.7848331853747,
+          "input_tokens": 147,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.0449999999999995e-05,
+      "total_latency_ms": 1041.7848331853747
+    },
+    {
+      "user": "проверь токены в hermes настройках",
+      "expected": "search",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.8}",
+          "latency_ms": 1127.4556247517467,
+          "input_tokens": 149,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.895e-05,
+      "total_latency_ms": 1127.4556247517467
+    },
+    {
+      "user": "что делает функция validateConfig?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.9}",
+          "latency_ms": 1336.667625233531,
+          "input_tokens": 145,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.895e-05,
+      "total_latency_ms": 1336.667625233531
+    },
+    {
+      "user": "объясни по шагам что делает run_loop.py",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"understand\", \"confidence\": 0.9}",
+          "latency_ms": 943.2986248284578,
+          "input_tokens": 150,
+          "output_tokens": 15
+        }
+      ],
+      "total_cost": 3.15e-05,
+      "total_latency_ms": 943.2986248284578
+    },
+    {
+      "user": "почему логи не сбрасываются после рестарта?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+          "latency_ms": 947.2099160775542,
+          "input_tokens": 151,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.985e-05,
+      "total_latency_ms": 947.2099160775542
+    },
+    {
+      "user": "refactor функцию validateConfig",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.9}",
+          "latency_ms": 662.70412504673,
+          "input_tokens": 144,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.82e-05,
+      "total_latency_ms": 662.70412504673
+    },
+    {
+      "user": "опиши структуру openclaw и ключевые компоненты",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 803.9874574169517,
+          "input_tokens": 151,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.105e-05,
+      "total_latency_ms": 803.9874574169517
+    },
+    {
+      "user": "почему disasm падает на этом байте 0xFF 0xC0?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.8}",
+          "latency_ms": 1362.1357902884483,
+          "input_tokens": 159,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 3.1049999999999996e-05,
+      "total_latency_ms": 1362.1357902884483
+    },
+    {
+      "user": "опиши текущий флоу обработки задачи от analyst до dev",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"describe\",\"confidence\":0.9}",
+          "latency_ms": 994.8359169065952,
+          "input_tokens": 152,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.9400000000000003e-05,
+      "total_latency_ms": 994.8359169065952
+    },
+    {
+      "user": "fix that shit",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.7}",
+          "latency_ms": 1421.7013325542212,
+          "input_tokens": 142,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.79e-05,
+      "total_latency_ms": 1421.7013325542212
+    },
+    {
+      "user": "опиши, как работает наш scrumban в общих чертах",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"describe\", \"confidence\": 0.9}",
+          "latency_ms": 1202.845792286098,
+          "input_tokens": 153,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.1349999999999996e-05,
+      "total_latency_ms": 1202.845792286098
+    },
+    {
+      "user": "дай overall architecture, как модули Core/App/CLI связаны",
+      "expected": "describe",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "describe",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "describe",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"describe\",\"confidence\":0.9}",
+          "latency_ms": 929.4739998877048,
+          "input_tokens": 153,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.955e-05,
+      "total_latency_ms": 929.4739998877048
+    },
+    {
+      "user": "fix the issue",
+      "expected": "modify",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.8,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.8}",
+          "latency_ms": 945.6389155238867,
+          "input_tokens": 142,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.79e-05,
+      "total_latency_ms": 945.6389155238867
+    },
+    {
+      "user": "что за херня с config.yaml?",
+      "expected": "understand",
+      "kind": "holdout",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.7}",
+          "latency_ms": 890.6134581193328,
+          "input_tokens": 148,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.9399999999999996e-05,
+      "total_latency_ms": 890.6134581193328
+    },
+    {
+      "user": "?",
+      "expected": "FAIL",
+      "kind": "adv-single-char",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.4,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.4,
+          "raw": "{\"label\":\"search\",\"confidence\":0.4}",
+          "latency_ms": 813.8433340936899,
+          "input_tokens": 140,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.76e-05,
+      "total_latency_ms": 813.8433340936899
+    },
+    {
+      "user": "fix",
+      "expected": "modify",
+      "kind": "adv-single-word",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.7}",
+          "latency_ms": 904.1835414245725,
+          "input_tokens": 140,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.76e-05,
+      "total_latency_ms": 904.1835414245725
+    },
+    {
+      "user": "что",
+      "expected": "FAIL",
+      "kind": "adv-single-word",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.5,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.5,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.5}",
+          "latency_ms": 863.6157074943185,
+          "input_tokens": 140,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.8199999999999998e-05,
+      "total_latency_ms": 863.6157074943185
+    },
+    {
+      "user": "найди и удали все упоминания GitHub Copilot из кода",
+      "expected": "modify",
+      "kind": "adv-double-intent",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.9,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.9}",
+          "latency_ms": 950.6327919661999,
+          "input_tokens": 155,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.165e-05,
+      "total_latency_ms": 950.6327919661999
+    },
+    {
+      "user": "explain why this fails and then fix it permanently",
+      "expected": "modify",
+      "kind": "adv-double-intent",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.8,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.8,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.8}",
+          "latency_ms": 921.6522499918938,
+          "input_tokens": 149,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.0749999999999995e-05,
+      "total_latency_ms": 921.6522499918938
+    },
+    {
+      "user": "describe everything and rewrite all bad parts",
+      "expected": "modify",
+      "kind": "adv-triple-intent",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\":\"modify\",\"confidence\":0.7}",
+          "latency_ms": 1260.182499885559,
+          "input_tokens": 146,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.85e-05,
+      "total_latency_ms": 1260.182499885559
+    },
+    {
+      "user": "donde esta la funcion validateUser?",
+      "expected": "search",
+      "kind": "adv-spanish",
+      "route": "gpt-4o-mini",
+      "final_label": "search",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "search",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"search\",\"confidence\":0.9}",
+          "latency_ms": 956.4691670238972,
+          "input_tokens": 147,
+          "output_tokens": 11
+        }
+      ],
+      "total_cost": 2.865e-05,
+      "total_latency_ms": 956.4691670238972
+    },
+    {
+      "user": "wie funktioniert dieser Hook?",
+      "expected": "understand",
+      "kind": "adv-german",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.9,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.9,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.9}",
+          "latency_ms": 741.0492496564984,
+          "input_tokens": 144,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 2.88e-05,
+      "total_latency_ms": 741.0492496564984
+    },
+    {
+      "user": "lol idk man this whole codebase is just yikes please halp",
+      "expected": "FAIL",
+      "kind": "adv-noisy-no-intent",
+      "route": "gpt-4o-mini",
+      "final_label": "understand",
+      "final_confidence": 0.5,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "understand",
+          "confidence": 0.5,
+          "raw": "{\"label\":\"understand\",\"confidence\":0.5}",
+          "latency_ms": 764.452749863267,
+          "input_tokens": 154,
+          "output_tokens": 12
+        }
+      ],
+      "total_cost": 3.0299999999999998e-05,
+      "total_latency_ms": 764.452749863267
+    },
+    {
+      "user": "найди объясни и удали",
+      "expected": "modify",
+      "kind": "adv-ambiguous-chain",
+      "route": "gpt-4o-mini",
+      "final_label": "modify",
+      "final_confidence": 0.7,
+      "calls": [
+        {
+          "model": "gpt-4o-mini",
+          "label": "modify",
+          "confidence": 0.7,
+          "raw": "{\"label\": \"modify\", \"confidence\": 0.7}",
+          "latency_ms": 803.6749577149749,
+          "input_tokens": 146,
+          "output_tokens": 14
+        }
+      ],
+      "total_cost": 3.0299999999999998e-05,
+      "total_latency_ms": 803.6749577149749
+    }
+  ]
+}
